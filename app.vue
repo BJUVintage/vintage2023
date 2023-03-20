@@ -9,3 +9,13 @@
     </nav>
   </div>
 </template>
+
+<style lang="scss">
+
+$bgColor: #204F40;
+
+.index {
+  background-color: $bgColor;
+}
+
+</style>

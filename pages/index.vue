@@ -4,4 +4,6 @@
   <h1>Vintage 2023</h1>
 </template>
 
-<style scoped></style>
+<style scoped>
+@import '~/assets/styles.scss'
+</style>
