@@ -1,0 +1,19 @@
+$bgColor: #204F40;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $bgColor;
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex; 
+  gap: 1rem;
+}
+
+.vintage__desktop {
+  width: 40vw;
+}

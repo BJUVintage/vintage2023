@@ -1,9 +1,9 @@
 <script lang="ts" setup></script>
 
 <template>
-  <h1>Vintage 2023</h1>
+    <h1>Vintage 2023</h1>
 </template>
 
 <style scoped>
-@import '~/assets/styles.scss'
+@import '~/scss/styles.scss'
 </style>
