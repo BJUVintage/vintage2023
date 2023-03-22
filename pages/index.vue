@@ -1,9 +1,30 @@
 <script lang="ts" setup></script>
 
 <template>
-    <h1>Vintage 2023</h1>
+    <NuxtLink to="/">
+        <img src="~/assets/vintage_desktop.svg" alt="" class="vintage__desktop center">
+    </NuxtLink>
+    
+    <events/>
+    <groups/>
+    <search/>
+
 </template>
 
-<style scoped>
-@import '~/scss/styles.scss'
+<script>
+import events from '~/pages/events.vue'
+import groups from '~/pages/groups.vue'
+import search from '~/pages/search.vue'
+
+export default {
+    components: {
+        events,
+        groups,
+        search,
+    }
+}
+</script>
+
+<style lang="scss">
+@import '~/scss/styles.scss', '~/scss/fonts.scss' ;
 </style>

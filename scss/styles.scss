@@ -10,10 +10,21 @@ body {
 }
 
 nav {
+  margin-top: 2rem;
   display: flex; 
   gap: 1rem;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 
 .vintage__desktop {
-  width: 40vw;
+  width: 70rem;
 }
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  }
