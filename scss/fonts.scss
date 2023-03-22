@@ -1,4 +1,54 @@
-// navbar
+$fontColor: #6C9781;
+$fontHoverColor: #ABBCA7;
+
+@font-face {
+  font-family: 'DomaineDisplay';
+  src: url(~/assets/fonts/DomaineDisplay-Semibold.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DomaineDisplay';
+  src: url(~/assets/fonts/DomaineDisplay-Bold.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Turis';
+  src: url(~/assets/fonts/Turis-Light.otf);
+  font-weight: 300;
+}
+
+
 a {
-  color: #6C9781;
+  font-family: 'DomaineDisplay';
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform:uppercase;
+  color: $fontColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $fontHoverColor;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Turis';
+  color: $fontColor;
+  font-size: 3rem;
+
+  span {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+}
+
+.verse {
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 40px;
+  font-size: 2.5rem;
 }
