@@ -2,7 +2,7 @@
 
 <template>
     <NuxtLink to="/">
-        <img src="~/assets/vintage_desktop.svg" alt="" class="vintage__desktop center">
+        <img src="~/assets/svgs/vintage_desktop.svg" alt="" class="vintage__desktop center">
     </NuxtLink>
     
     <events/>
