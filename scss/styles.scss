@@ -10,12 +10,11 @@ body {
 }
 
 nav {
+  top:0;
   width:100%;
   position:fixed;
   margin-top: 2.5rem;
-  display: flex; 
   gap: 1rem;
-  top:0;
   display: flex;
   justify-content: space-around;
 }
@@ -35,9 +34,4 @@ nav {
 .center__text {
   margin-top: 120px;
   text-align: center;
-}
-
-.verse {
-  text-align: center;
-  margin-left: 300px;
 }
