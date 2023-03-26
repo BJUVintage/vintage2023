@@ -5,12 +5,8 @@
 </template>
 
 <script>
-import PageTitle from '~/components/PageTitle.vue';
 export default {
   name: "events",
-  components: {
-    PageTitle
-  }
 }
 </script>
 

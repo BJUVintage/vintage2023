@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <h1>Search</h1>
+  <page-title :title="'Search'"/>
 </template>
 
 <script>

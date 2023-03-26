@@ -1,14 +1,12 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    <h1>Groups</h1>
-  </div>
+  <page-title :title="'Groups'"/>
 </template>
 
 <script>
 export default {
-  name: "groups"
+  name: "groups",
   }
 </script>
 
