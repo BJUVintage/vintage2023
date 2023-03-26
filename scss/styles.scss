@@ -1,19 +1,23 @@
-$bgColor: #204F40;
+$website--bg: #204F40;
+$page__title--bg: #254D3F;
+$page__title--font: #6C9781;
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background: $bgColor;
+  background: $website--bg;
   font-size: 1.6rem;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 nav {
   top:0;
   width:100%;
   position:fixed;
-  margin-top: 2.5rem;
+  margin-top: 25px,;
   gap: 1rem;
   display: flex;
   justify-content: space-around;
@@ -21,6 +25,7 @@ nav {
 
 .vintage__desktop {
   width: 875px;
+  margin-bottom: 100px;
 }
 
 .vintage__center {
@@ -31,7 +36,34 @@ nav {
   padding: 10px;
   }
 
+.vintage__gradient {
+  background: linear-gradient(#215041, #2d5c4c);
+  padding-bottom: 350px;
+  margin-bottom: 0;
+}
+
+.verse {
+  text-align: center;
+  margin-left: 300px;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
 .center__text {
   margin-top: 120px;
   text-align: center;
+}
+
+.page__title {
+  background-color: $page__title--bg;
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+    font-family: 'DomaineDisplayItalic';
+    color: $page__title--font;
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
 }

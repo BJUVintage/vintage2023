@@ -5,13 +5,15 @@
         <img src="~/assets/svgs/vintage_desktop.svg" alt="" class="vintage__desktop vintage__center">
     </NuxtLink>
 
-    <p class="center__text">
-        Behold, I send you forth as <span>sheep</span><br>
-        in the midst of <span>wolves:</span><br>
-        be ye therefore wise as <span>serpents,</span><br>
-        and harmless as <span>doves.</span>
-    </p>
-    <p class="verse">Matthew 10:16</p>
+    <div class="vintage__gradient">
+        <p class="center__text">
+            Behold, I send you forth as <span>sheep</span><br>
+            in the midst of <span>wolves:</span><br>
+            be ye therefore wise as <span>serpents,</span><br>
+            and harmless as <span>doves.</span>
+        </p>
+        <p class="verse">Matthew 10:16</p>
+    </div>
     
     <events/>
     <groups/>

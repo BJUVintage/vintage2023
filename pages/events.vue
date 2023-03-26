@@ -1,13 +1,17 @@
 <script lang="ts" setup></script>
 
 <template>
-  <h1>Events</h1>
+  <page-title :title="'Events'"/>
 </template>
 
 <script>
+import PageTitle from '~/components/PageTitle.vue';
 export default {
-  name: "events"
+  name: "events",
+  components: {
+    PageTitle
   }
+}
 </script>
 
 <style scoped></style>

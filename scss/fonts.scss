@@ -14,6 +14,12 @@ $fontHoverColor: #ABBCA7;
 }
 
 @font-face {
+  font-family: 'DomaineDisplayItalic';
+  src: url(~/assets/fonts/DomaineDisplayNarrow-SemiboldItalic.otf);
+  font-weight: 500;
+}
+
+@font-face {
   font-family: 'Turis';
   src: url(~/assets/fonts/Turis-Light.otf);
   font-weight: 300;
@@ -49,6 +55,5 @@ p {
 .verse {
   text-align: center;
   margin-left: 300px;
-  margin-top: 40px;
   font-size: 2.5rem;
 }
