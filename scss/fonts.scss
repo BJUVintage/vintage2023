@@ -9,13 +9,14 @@ $fontHoverColor: #ABBCA7;
 
 @font-face {
   font-family: 'DomaineDisplay';
-  src: url(~/assets/fonts/DomaineDisplay-Bold.otf);
-  font-weight: 500;
+  src: url(~/assets/fonts/DomaineDisplayNarrow-SemiboldItalic.otf);
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'DomaineDisplayItalic';
-  src: url(~/assets/fonts/DomaineDisplayNarrow-SemiboldItalic.otf);
+  font-family: 'DomaineDisplay';
+  src: url(~/assets/fonts/DomaineDisplay-Bold.otf);
   font-weight: 500;
 }
 
@@ -50,10 +51,4 @@ p {
     font-weight: 500;
     font-size: 3.5rem;
   }
-}
-
-.verse {
-  text-align: center;
-  margin-left: 300px;
-  font-size: 2.5rem;
 }
