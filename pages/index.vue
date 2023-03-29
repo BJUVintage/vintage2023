@@ -13,23 +13,17 @@
         </p>
         <p class="verse">Matthew 10:16</p>
     
-    <events/>
-    <groups/>
-    <search/>
+    <events-mini/>
+    <groups-mini/>
+    <search-mini/>
 
 </template>
 
 <script>
-import events from '~/pages/events.vue'
-import groups from '~/pages/groups.vue'
-import search from '~/pages/search.vue'
+import EventsMini from '~~/components/EventsMini.vue'
 
 export default {
-    components: {
-        events,
-        groups,
-        search,
-    }
+  components: { EventsMini },
 }
 </script>
 

@@ -1,11 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-  <page-title :title="'Events'"/>
+  <events-mini />
 </template>
 
 <script>
+import EventsMini from '~~/components/EventsMini.vue'
 export default {
+  components: { EventsMini },
   name: "events",
 }
 </script>

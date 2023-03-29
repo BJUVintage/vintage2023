@@ -1,6 +1,6 @@
-$website--bg: #204F40;
-$page__title--bg: #254D3F;
-$page__title--font: #6C9781;
+$website--bg: #204f40;
+$page__title--bg: #254d3f;
+$page__title--font: #6c9781;
 $footer--bg: #b2e5c9;
 
 html {
@@ -15,10 +15,10 @@ body {
 }
 
 nav {
-  top:0;
-  width:100%;
-  position:fixed;
-  margin-top: 25px,;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  margin-top: 25px;
   gap: 1rem;
   display: flex;
   justify-content: space-around;
@@ -32,26 +32,46 @@ footer {
   height: 160px;
   width: 100vw;
   background-color: $footer--bg;
-  display: grid;
   color: $website--bg;
-  font-family: 'DomaineDisplay';
-  padding: 5px 100px 0px 50px;
+  font-family: "DomaineDisplay";
+  // padding: 5px 100px 0px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
   h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     font-style: italic;
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 3rem;
-    margin-bottom: 0px;
   }
   h1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-transform: uppercase;
-    margin: 5px 0;
-    margin-bottom: 10px;
     font-size: 4rem;
   }
-  li {
-    display: inline;
-    margin: 10px;
+  ul {
+    padding: 0;
+
+    li {
+      justify-self: center;
+      align-self: center;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      display: inline;
+      margin: 10px;
+      a {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
 
@@ -66,7 +86,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
-  }
+}
 
 .vintage__gradient {
   background: linear-gradient(#215041, #2d5c4c);
@@ -91,7 +111,7 @@ footer {
   margin-top: 0;
   h1 {
     margin-top: 0;
-    font-family: 'DomaineDisplay';
+    font-family: "DomaineDisplay";
     font-style: italic;
     font-weight: 400;
     color: $page__title--font;
