@@ -1,42 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Aright vintage peeps
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+1. install nvm
+2. install node via nvm (trust me its better this way than the normal install)
+3. clone the github vintage2023 repo (you can do this whenever really)
+4. go to your repo folder and type in the terminal `npm install` and then `npm run dev` 
+5. you can now go to `localhost:3000` on your browser and view the website (instead of `google.com` in the url, type `localhost:3000`)
 
-## Setup
+[Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[Vue.js component documentation](https://vuejs.org/guide/essentials/component-basics.html)
