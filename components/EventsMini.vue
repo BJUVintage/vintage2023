@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <page-title :title="'Events'"/>
+  <page-title :title="'Events'" class="events" />
 </template>
 
 <script>

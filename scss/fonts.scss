@@ -2,53 +2,38 @@ $fontColor: #6C9781;
 $fontHoverColor: #ABBCA7;
 
 @font-face {
-  font-family: 'DomaineDisplay';
-  src: url(~/assets/fonts/DomaineDisplay-Semibold.otf);
-  font-weight: 400;
+  font-family: 'DomaineDisplayNarrow-RegularItalic';
+  src: url(~/assets/fonts/DomaineDisplayNarrow-RegularItalic.otf);
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'DomaineDisplay';
-  src: url(~/assets/fonts/DomaineDisplayNarrow-SemiboldItalic.otf);
-  font-weight: 400;
+  font-family: 'DomaineDisplayNarrow-MediumItalic';
+  src: url(~/assets/fonts/DomaineDisplayNarrow-MediumItalic.otf);
   font-style: italic;
 }
 
 @font-face {
   font-family: 'DomaineDisplay';
+  src: url(~/assets/fonts/DomaineDisplay-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'DomaineDisplayBold';
   src: url(~/assets/fonts/DomaineDisplay-Bold.otf);
-  font-weight: 500;
 }
 
 @font-face {
   font-family: 'Turis';
+  src: url(~/assets/fonts/Turis-Regular.otf);
+}
+
+@font-face {
+  font-family: 'TurisBold';
+  src: url(~/assets/fonts/Turis-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'TurisLight';
   src: url(~/assets/fonts/Turis-Light.otf);
-  font-weight: 300;
-}
-
-
-a {
-  font-family: 'DomaineDisplay';
-  font-weight: 400;
-  font-size: 2.5rem;
-  text-transform:uppercase;
-  color: $fontColor;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $fontHoverColor;
-  font-weight: 400;
-}
-
-p {
-  font-family: 'Turis';
-  color: $fontColor;
-  font-size: 3rem;
-
-  span {
-    font-family: 'DomaineDisplay';
-    font-weight: 500;
-    font-size: 3.5rem;
-  }
 }

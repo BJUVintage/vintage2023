@@ -1,123 +1,178 @@
-$website--bg: #204f40;
-$page__title--bg: #254d3f;
-$page__title--font: #6c9781;
-$footer--bg: #b2e5c9;
+$dark-green: #204F40;
+$dark-blue: #344767;
+$light-green: #87A168;
+$lighter-green: #B3C7C1;
+$light-blue: #8BBFBF;
+$header--bg: #f5f5f5;
+$header-height: 80px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background: $website--bg;
   font-size: 1.6rem;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 0;
 }
 
-nav {
+header {
+  background-color: $header--bg;
+  position: sticky;
+  height: $header-height;
   top: 0;
-  width: 100%;
-  position: fixed;
-  margin-top: 25px;
-  gap: 1rem;
-  display: flex;
-  justify-content: space-around;
-}
 
-.main-gradient {
-  background: linear-gradient($website--bg, #76a18c);
-}
-
-footer {
-  height: 160px;
-  width: 100vw;
-  background-color: $footer--bg;
-  color: $website--bg;
-  font-family: "DomaineDisplay";
-  // padding: 5px 100px 0px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1;
-  h2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 3rem;
+  nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
-  h1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-transform: uppercase;
-    font-size: 4rem;
-  }
-  ul {
-    padding: 0;
 
-    li {
-      justify-self: center;
-      align-self: center;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      display: inline;
-      margin: 10px;
-      a {
-        font-size: 1.6rem;
-      }
-    }
+  a {
+    font-family: 'TurisBold';
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 20px;
   }
 }
 
-.vintage__desktop {
-  width: 875px;
-  margin-bottom: 100px;
+
+
+a {
+  font-family: 'Turis';
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $dark-green;
+  text-decoration: none;
 }
 
-.vintage__center {
-  display: block;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
+a:hover {
+  color: $light-green;
+  font-weight: 400;
 }
 
-.vintage__gradient {
-  background: linear-gradient(#215041, #2d5c4c);
-  padding-bottom: 350px;
-  margin-bottom: 0;
-}
 
 .verse {
   text-align: center;
-  margin-left: 300px;
-  margin-bottom: 0;
-  font-size: 2.5rem;
-}
+  margin: 0 0;
+  padding-top: 200px;
+  font-size: 4rem;
+  font-family: 'DomaineDisplayNarrow-RegularItalic';
+  background-color: $light-blue; 
+  letter-spacing: .1rem;
 
-.center__text {
-  margin-top: 120px;
-  text-align: center;
-}
-
-.page__title {
-  background-color: $page__title--bg;
-  margin-top: 0;
-  h1 {
-    margin-top: 0;
-    font-family: "DomaineDisplay";
-    font-style: italic;
-    font-weight: 400;
-    color: $page__title--font;
-    text-align: center;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  span {
+    font-family: 'DomaineDisplayNarrow-MediumItalic';
+    font-size: 4.2rem;
   }
+}
+
+#reference {
+  margin: 0 0;
+  padding-top:4rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $light-blue;
+  padding-bottom: 100px;
+  font-family: 'TurisLight';
+  font-size: 2rem;
+}
+
+.VINTAGE {
+  text-align: center;
+  height: calc(100vh - $header-height);
+  padding-top: 220px;
+  background-color: $dark-green;
+  color: $light-green;
+  margin: 0 0;
+
+  img {
+    height: 150px;
+  }
+}
+
+.trapezoid {
+  // align shape in middle
+  margin: 0 auto;
+  margin-top: 45px;
+
+  // set dimensions of rectangle
+  width: 300px;
+
+  // font stuff
+  font-family: 'TurisBold';
+  font-weight: 400;
+  font-size: 30px;
+  color: $dark-green;
+
+  border-top: 50px solid $light-green;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  // padding-bottom: 10px;
+  position: relative;
+
+   h2 {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: -51px;
+    text-align: center;
+   }
+}
+
+
+.events {
+  background-color: $dark-blue;
+}
+
+.section-title {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'TurisBold';
+    font-weight: 400;
+    color: $light-green;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+
+  img {
+    position: absolute;
+    top: -200px;
+    bottom: 0px;
+    padding-left: 69vw;
+    opacity: 30%;
+  }
+
+}
+
+p {
+  font-family: 'Turis';
+  color: $dark-green;
+  font-size: 3rem;
+
+  span {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+}
+
+.spacer {
+  height: 30px;
+  background-color: #fff;
 }
