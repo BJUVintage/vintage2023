@@ -12,11 +12,12 @@
   </div>
 
   <footer>
-    <div class="grid-container">
+    <div class="flex-container">
       <div>
         <h2>Built by</h2>
         <h1>The Vintage Staff</h1>
       </div>
+      <div class="space-between" />
       <div class="dates">
         <ul>
           <li><a href="http://www.bjuvintage.com/2022/index.html">2022</a></li>
