@@ -43,7 +43,6 @@ header {
 }
 
 
-
 a {
   font-family: 'Turis';
   font-size: 2.5rem;
@@ -175,4 +174,69 @@ p {
 .spacer {
   height: 30px;
   background-color: #fff;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: $dark-green;
+  padding-left: 70px;
+  padding-top: 150px;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  h2 {
+    font-family: 'DomaineDisplayNarrow-RegularItalic';
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-family: 'DomaineDisplayNarrow-Regular';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li:nth-child(1) {
+    margin-left: 0px;
+  }
+  li:nth-child(6) {
+    margin-left: 0px;
+  }
+  li:nth-child(11) {
+    margin-left: 0px;
+  }
+
+  br {
+    margin-bottom: 15px;
+  }
+
+  li {
+    padding: 0;
+    display: inline;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    a {
+      font-family: 'TurisBold';
+      font-size: 1.6rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+.green_dingleberry {
+  height: 30px;
+  background-color: $dark-green;
+  padding: 0;
+  margin: 0;
 }

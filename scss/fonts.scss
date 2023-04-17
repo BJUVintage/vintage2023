@@ -2,6 +2,12 @@ $fontColor: #6C9781;
 $fontHoverColor: #ABBCA7;
 
 @font-face {
+  font-family: 'DomaineDisplayNarrow-Regular';
+  src: url(~/assets/fonts/DomaineDisplayNarrow-Regular.otf);
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'DomaineDisplayNarrow-RegularItalic';
   src: url(~/assets/fonts/DomaineDisplayNarrow-RegularItalic.otf);
   font-style: italic;
