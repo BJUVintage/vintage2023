@@ -250,3 +250,64 @@ footer {
   padding: 0;
   margin: 0;
 }
+
+
+// group page
+
+.group-container {
+  background-color: $light-blue;
+
+ ul {
+  margin: 0;
+  margin-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 70px;
+
+  li {
+    list-style: none;
+    font-family: 'Turis';
+    color: $dark-green;
+  }
+ }
+
+ .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  grid-template-columns: auto auto;
+ }
+
+ .big-photo {
+  flex: 1;
+  height: 500px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: magenta;
+ }
+
+ .small-photo {
+  height: 300px;
+  background-color: green;
+  flex-grow: 1;
+  margin-left: 60px;
+ }
+ .small-photo:nth-child(2) {
+  flex-grow: 1;
+  margin-left: 0;
+ }
+
+ .small-photo:nth-child(3) {
+  flex-grow: 2;
+  margin-right: 60px;
+ }
+
+}
+
+.group-title {
+  margin: 0;
+  color: $dark-green;
+  margin-left: 70px;
+  text-align: left;
+  font-size: 6.4rem;
+  font-family: 'TurisBold';
+  text-transform: uppercase;
+}

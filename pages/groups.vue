@@ -2,6 +2,7 @@
 
 <template>
   <page-title :title="'Groups'"/>
+  <group :group-title="'Basketball'" />
 </template>
 
 <script>
