@@ -8,7 +8,10 @@
 <script>
 export default {
   name: "groups",
+  data() {
+  },
   }
+
 </script>
 
 <style scoped></style>
