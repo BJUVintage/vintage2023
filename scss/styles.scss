@@ -27,10 +27,12 @@ header {
   height: $header-height;
   top: 0;
 
+// ~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~
   nav {
     width: 100%;
     height: $header-height;
     display: flex;
+    z-index:1;
     align-items: center;
 
     div {
@@ -102,7 +104,9 @@ a:hover {
   margin: 0 0;
 
   img {
-    height: 150px;
+    // height: 150px;
+    width: 60vw;
+    min-width: 600px;
   }
 }
 
@@ -112,7 +116,9 @@ a:hover {
   margin-top: 45px;
 
   // set dimensions of rectangle
-  width: 300px;
+  // width: 300px;
+  width: 20vw;
+  min-width: 150px;
 
   // font stuff
   font-family: 'TurisBold';
@@ -134,13 +140,10 @@ a:hover {
     text-align: center;
    }
 }
-
-
-.events {
-  background-color: $dark-blue;
-}
-
+// ~~~~~~~~~~~~~~~~~~~~~~ SECTION TITLE ~~~~~~~~~~~~~~~~~~~~~~
 .section-title {
+  display: flex;
+  width: 100%;
   height: 150px;
   position: relative;
   overflow: hidden;
@@ -159,15 +162,41 @@ a:hover {
     text-transform: uppercase;
   }
 
-  img {
-    position: absolute;
-    top: -200px;
-    bottom: 0px;
-    padding-left: 69vw;
-    opacity: 30%;
+  .svg-container {
+    display: flex;
+    img {
+      opacity: 30%;
+      position: relative;
+    }
   }
-
 }
+
+.events {
+  background-color: $dark-blue;
+}
+.groups {
+  background-color: $dark-green;
+}
+.search {
+  background-color: $dark-blue;
+}
+.eventSVG {
+  top: -130px;
+  left: 75vw;
+  height: 600px;
+}
+.groupsSVG {
+  top: -200px;
+  left: 65vw;
+  height: 670px;
+}
+.searchSVG{
+  top: -19px;
+  left: 80vw;
+  height: 400px;
+  transform: rotateY(180deg);
+}
+
 
 p {
   font-family: 'Turis';
@@ -186,11 +215,13 @@ p {
   background-color: #fff;
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~
 footer {
   background-color: #f5f5f5;
   color: $dark-green;
   padding-left: 60px;
   padding-top: 40px;
+  margin-top: 20px;
 
   .flex-container {
     display: flex;
@@ -208,6 +239,16 @@ footer {
     margin-top: 10px;
     margin-bottom: 40px;
   } 
+
+  h1 {
+    font-family: 'DomaineDisplayNarrow-Regular';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
   h2 {
     font-family: 'DomaineDisplayNarrow-RegularItalic';
     letter-spacing: 3px;
@@ -221,117 +262,127 @@ footer {
   }
 
   h5 {
+    font-family: 'Turis';
     margin: 0;
   }
-
-  h1 {
-    font-family: 'DomaineDisplayNarrow-Regular';
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 4rem;
-    margin-top: 0;
-    margin-bottom: 5px;
+  table {
+    width: 100%;
+  }
+  a {
+    font-family: 'Turis';
+    font-size: 13px;
+    text-decoration: underline;
   }
 
-  h5 {
-    font-family: 'DomaineDisplayNarrow-Regular';
-  }
+}
 
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  li:nth-child(1) {
-    margin-left: 0px;
-  }
-  li:nth-child(6) {
-    margin-left: 0px;
-  }
-  li:nth-child(11) {
-    margin-left: 0px;
-  }
-
-  br {
-    margin-bottom: 5px;
-  }
-
-  li {
-    padding: 0;
-    display: inline;
-    margin-left: 20px;
-    a {
-      font-family: 'TurisBold';
-      font-size: 1.3rem;
-      text-decoration: underline;
+@mixin basic-layout {
+  
+  .title-container {
+    display: flex;
+    // justify-content: left;
+    h1 {
+      margin-top: 20px;
+      font-family: 'DomaineDisplay';
+      font-size: 6.4rem;
+      color: $dark-green;
     }
   }
-}
-
-.green_dingleberry {
-  height: 30px;
-  background-color: $dark-green;
-  padding: 0;
-  margin: 0;
-}
-
-
-// group page
-
-.group-container {
-  background-color: $light-blue;
-
- ul {
-  margin: 0;
-  margin-top: 60px;
-  padding-left: 60px;
-  padding-bottom: 70px;
-
-  li {
-    list-style: none;
+  
+  p {
     font-family: 'Turis';
-    color: $dark-green;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
- }
 
- .flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  grid-template-columns: auto auto;
- }
+  .input-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    input {
+      width: 50%;
+      min-width: 230px;
+      border-radius: 50px;
+      border: 5px solid $dark-green;
+      padding: .8rem 2rem;
+      outline: none;
+      font-family: 'Turis', sans-serif;
+      font-size: 1.6rem;
+      margin-right: 25px;
+    }
+    button {
+    font-size: 1.6rem;
+    border-radius: 50px;
+    border-style: none;
+    padding: 1.2rem 3rem;
+    font-family: 'Turis', sans-serif;
+    background-color: $dark-green;
+    color: $header--bg;
+    }
+  }
 
- .big-photo {
-  flex: 1;
-  height: 500px;
-  margin-left: 60px;
-  margin-right: 60px;
-  background-color: magenta;
- }
-
- .small-photo {
-  height: 300px;
-  background-color: green;
-  flex-grow: 1;
-  margin-left: 60px;
- }
- .small-photo:nth-child(2) {
-  flex-grow: 1;
-  margin-left: 0;
- }
-
- .small-photo:nth-child(3) {
-  flex-grow: 2;
-  margin-right: 60px;
- }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    button {
+      margin-bottom: 30px;
+      background-color: $dark-green;
+      color: $header--bg;
+      font-family: 'TurisBold';
+      padding: 15px 25px 15px 25px;
+      text-transform: uppercase;
+      border: none;
+      a {
+        color: white;
+      }
+    }
+  }
+  
+  .img-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: left;
+    gap: 20px;
+    img {
+      margin: 0;
+      max-width: 500px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
 
 }
 
-.group-title {
-  margin: 0;
-  color: $dark-green;
-  margin-left: 70px;
-  text-align: left;
-  font-size: 6.4rem;
-  font-family: 'TurisBold';
-  text-transform: uppercase;
+
+.basic-layout-right {
+    padding-bottom: 10px;
+    margin: 50px 0 50px 60px;
+
+  img:nth-child(1) {
+    float: right;
+    height: 70vh;
+    width: 50vw;
+    object-fit: cover;
+    margin-left: 60px;
+  }
+  @include basic-layout(); 
+}
+
+
+.basic-layout-left {
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-right: 60px;
+
+  img:nth-child(1) {
+    float: left;
+    height: 70vh;
+    width: 50vw;
+    object-fit: cover;
+    margin-right: 60px;
+  }
+  @include basic-layout();
 }

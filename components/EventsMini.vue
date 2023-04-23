@@ -1,13 +1,17 @@
 <script lang="ts" setup></script>
 
 <template>
-  <page-title :title="'Events'" class="events" />
+  <page-title title="Events" svg="wolf.svg" class="events" svgClass="eventSVG" />
   <basic-layout
-    big-photo-name="feelsgoodman.jpg"
+    big-photo-name="pepe_lisa.jpg"
     title="Rush"
     description="Some random text about how rush this year was the best thing ever and this is really just filler text I need something here so it looks more complete."
-    button-text="some Text"
+    button-page="events"
+    button-text="All Events"
     little-photo-name="feelsgoodman.jpg"
+    little-photo-2-name="pepe_lisa.jpg"
+    big-photo-right
+    is-mini
   ></basic-layout>
 </template>
 

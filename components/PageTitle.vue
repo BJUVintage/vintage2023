@@ -1,7 +1,9 @@
 <template>
     <div class="section-title">
         <h1>{{ title }}</h1>
-        <img src="@/assets/svgs/wolf.svg" alt="">
+        <div class="svg-container">
+            <img :src="`/_nuxt/assets/svgs/${svg}`" alt="" :class="svgClass">
+        </div>
     </div>
 </template>
 
@@ -10,6 +12,8 @@ export default {
     name: 'PageTitle',
     props: {
         title: String,
+        svg: String,
+        svgClass: String,
     },
     mounted() {
         this.title;

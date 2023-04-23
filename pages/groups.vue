@@ -1,8 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <page-title :title="'Groups'"/>
-  <group :group-title="'Basketball'" />
+  <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG"/>
 </template>
 
 <script>

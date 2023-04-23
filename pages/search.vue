@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <page-title :title="'Search'"/>
+  <search-mini />
 </template>
 
 <script>
