@@ -1,15 +1,22 @@
 <template>
   <header>
-    <nav class="nav">
-        <div>
-          <NuxtLink to="/">
-            <img src="~/assets/svgs/VINTAGE.svg" alt="">
-          </NuxtLink>
+    <nav>
+        <div class="navbar">
+          <div>
+            <NuxtLink to="/">
+              <img class="nav-link" src="~/assets/svgs/VINTAGE.svg" alt="">
+            </NuxtLink>
+          </div>
+          <div></div>
+          <div><NuxtLink class="nav-link" to="events">Events</NuxtLink></div>
+          <div><NuxtLink class="nav-link" to="groups">Groups</NuxtLink></div>
+          <div><NuxtLink class="nav-link" to="search">Search</NuxtLink></div>
         </div>
-        <div></div>
-        <div><NuxtLink to="events">Events</NuxtLink></div>
-        <div><NuxtLink to="groups">Groups</NuxtLink></div>
-        <div><NuxtLink to="search">Search</NuxtLink></div>
+        <div class="hamburger">
+          <div class="bar" />
+          <div class="bar" />
+          <div class="bar" />
+        </div>
 
     </nav>
   </header>

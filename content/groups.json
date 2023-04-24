@@ -1,0 +1,25 @@
+{
+    "groups": [{
+        "name": "Bruins",
+        "slug": "bruins",
+        "content": [{
+            "name": "Basketball",
+            "slug": "basketball",
+            "members": [
+                "Bob Jones",
+                "Leslie Jones"
+            ]
+        }]
+    }, {
+        "name": "Academic",
+        "slug": "academic",
+        "content": [{
+            "name": "Programming Team",
+            "slug": "programming",
+            "members": [
+                "Rhys Fuller",
+                "Don Kuhn"
+            ]
+        }]
+    }]
+}
