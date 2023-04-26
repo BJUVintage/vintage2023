@@ -1,8 +1,8 @@
-$dark-green: #204F40;
+$dark-green: #204f40;
 $dark-blue: #344767;
-$light-green: #87A168;
-$lighter-green: #B3C7C1;
-$light-blue: #8BBFBF;
+$light-green: #87a168;
+$lighter-green: #b3c7c1;
+$light-blue: #8bbfbf;
 $header--bg: #f5f5f5;
 $header-height: 80px;
 
@@ -27,9 +27,8 @@ header {
   height: $header-height;
   top: 0;
 
-// ~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~
+  // ~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~
   @media screen and (min-width: 940px) {
-    
   }
   .navbar {
     width: 100%;
@@ -37,8 +36,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 60px;
-    z-index:1;
-
+    z-index: 1;
 
     // VINTAGE svg
     div:nth-child(1) {
@@ -52,10 +50,9 @@ header {
   }
 
   a {
-    font-family: 'TurisBold';
+    font-family: "TurisBold";
   }
 }
-
 
 a {
   font-size: 2.2rem;
@@ -69,30 +66,29 @@ a:hover {
   font-weight: 400;
 }
 
-
 .verse {
   text-align: center;
   margin: 0 0;
   padding-top: 200px;
   font-size: 4rem;
-  font-family: 'DomaineDisplayNarrow-RegularItalic';
-  background-color: $light-blue; 
-  letter-spacing: .1rem;
+  font-family: "DomaineDisplayNarrow-RegularItalic";
+  background-color: $light-blue;
+  letter-spacing: 0.1rem;
 
   span {
-    font-family: 'DomaineDisplayNarrow-MediumItalic';
+    font-family: "DomaineDisplayNarrow-MediumItalic";
     font-size: 4.2rem;
   }
 }
 
 #reference {
   margin: 0 0;
-  padding-top:4rem;
+  padding-top: 4rem;
   text-align: center;
   text-transform: uppercase;
   background-color: $light-blue;
   padding-bottom: 100px;
-  font-family: 'TurisLight';
+  font-family: "TurisLight";
   font-size: 2rem;
 }
 
@@ -122,7 +118,7 @@ a:hover {
   min-width: 150px;
 
   // font stuff
-  font-family: 'TurisBold';
+  font-family: "TurisBold";
   font-weight: 400;
   font-size: 30px;
   color: $dark-green;
@@ -133,13 +129,13 @@ a:hover {
   // padding-bottom: 10px;
   position: relative;
 
-   h2 {
+  h2 {
     position: absolute;
     margin: 0;
     width: 100%;
     top: -51px;
     text-align: center;
-   }
+  }
 }
 // ~~~~~~~~~~~~~~~~~~~~~~ SECTION TITLE ~~~~~~~~~~~~~~~~~~~~~~
 .section-title {
@@ -155,7 +151,7 @@ a:hover {
     left: 0;
     margin: 0;
     width: 100%;
-    font-family: 'TurisBold';
+    font-family: "TurisBold";
     font-weight: 400;
     color: $light-green;
     text-align: center;
@@ -191,21 +187,20 @@ a:hover {
   left: 65vw;
   height: 670px;
 }
-.searchSVG{
+.searchSVG {
   top: -19px;
   left: 80vw;
   height: 400px;
   transform: rotateY(180deg);
 }
 
-
 p {
-  font-family: 'Turis';
+  font-family: "Turis";
   color: $dark-green;
   font-size: 3rem;
 
   span {
-    font-family: 'DomaineDisplay';
+    font-family: "DomaineDisplay";
     font-weight: 500;
     font-size: 3.5rem;
   }
@@ -239,10 +234,10 @@ footer {
     margin-left: 60px;
     margin-top: 10px;
     margin-bottom: 40px;
-  } 
+  }
 
   h1 {
-    font-family: 'DomaineDisplayNarrow-Regular';
+    font-family: "DomaineDisplayNarrow-Regular";
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 4rem;
@@ -251,7 +246,7 @@ footer {
   }
 
   h2 {
-    font-family: 'DomaineDisplayNarrow-RegularItalic';
+    font-family: "DomaineDisplayNarrow-RegularItalic";
     letter-spacing: 3px;
     font-size: 2rem;
     margin-bottom: 0px;
@@ -259,39 +254,52 @@ footer {
 
   h3 {
     margin-top: 10px;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
   }
 
   h5 {
-    font-family: 'Turis';
+    font-family: "Turis";
     margin: 0;
   }
   table {
     width: 100%;
   }
   a {
-    font-family: 'Turis';
+    font-family: "Turis";
     font-size: 13px;
     text-decoration: underline;
   }
+}
 
+@mixin basic-button {
+  button {
+    margin-bottom: 30px;
+    background-color: $dark-green;
+    color: $header--bg;
+    font-family: "TurisBold";
+    padding: 15px 25px 15px 25px;
+    text-transform: uppercase;
+    border: none;
+    a {
+      color: white;
+    }
+  }
 }
 
 @mixin basic-layout {
-  
   .title-container {
     display: flex;
     // justify-content: left;
     h1 {
       margin-top: 20px;
-      font-family: 'DomaineDisplay';
+      font-family: "DomaineDisplay";
       font-size: 6.4rem;
       color: $dark-green;
     }
   }
-  
+
   p {
-    font-family: 'Turis';
+    font-family: "Turis";
     font-size: 2.4rem;
     margin-top: 0;
     margin-bottom: 50px;
@@ -308,20 +316,20 @@ footer {
       min-width: 230px;
       border-radius: 50px;
       border: 5px solid $dark-green;
-      padding: .8rem 2rem;
+      padding: 0.8rem 2rem;
       outline: none;
-      font-family: 'Turis', sans-serif;
+      font-family: "Turis", sans-serif;
       font-size: 1.6rem;
       margin-right: 25px;
     }
     button {
-    font-size: 1.6rem;
-    border-radius: 50px;
-    border-style: none;
-    padding: 1.2rem 3rem;
-    font-family: 'Turis', sans-serif;
-    background-color: $dark-green;
-    color: $header--bg;
+      font-size: 1.6rem;
+      border-radius: 50px;
+      border-style: none;
+      padding: 1.2rem 3rem;
+      font-family: "Turis", sans-serif;
+      background-color: $dark-green;
+      color: $header--bg;
     }
   }
 
@@ -332,7 +340,7 @@ footer {
       margin-bottom: 30px;
       background-color: $dark-green;
       color: $header--bg;
-      font-family: 'TurisBold';
+      font-family: "TurisBold";
       padding: 15px 25px 15px 25px;
       text-transform: uppercase;
       border: none;
@@ -341,7 +349,7 @@ footer {
       }
     }
   }
-  
+
   .img-container {
     display: flex;
     margin-top: 15px;
@@ -354,13 +362,11 @@ footer {
       object-fit: cover;
     }
   }
-
 }
 
-
 .basic-layout-right {
-    padding-bottom: 10px;
-    margin: 50px 0 50px 60px;
+  padding-bottom: 10px;
+  margin: 50px 0 50px 60px;
 
   img:nth-child(1) {
     float: right;
@@ -369,14 +375,13 @@ footer {
     object-fit: cover;
     margin-left: 60px;
   }
-  @include basic-layout(); 
+  @include basic-layout();
 }
 
-
 .basic-layout-left {
-    padding-bottom: 10px;
-    margin-top: 50px;
-    margin-right: 60px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-right: 60px;
 
   img:nth-child(1) {
     float: left;
@@ -386,4 +391,82 @@ footer {
     margin-right: 60px;
   }
   @include basic-layout();
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GROUPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.group-names {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  height: calc(100vh - $header-height - 150px);
+  .group {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: $dark-green;
+    color: $header--bg;
+    font-family: "TurisBold";
+    padding: 20vh 10vw;
+    text-transform: uppercase;
+    border: none;
+
+    a {
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ GROUPS ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.links-map {
+  display: flex;
+}
+
+.group-title {
+  margin: 50px 60px 25px 60px;
+  font-family: "TurisLight";
+  font-size: 4rem;
+  color: $dark-green;
+}
+.groups-container {
+  margin: 0px 60px 25px 60px;
+  columns: 2;
+  gap: 0;
+  .team-name {
+    width: 100%;
+    font-family: "Turis";
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-green;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: $header--bg;
+    background-color: #204f40;
+    margin-bottom: 10px;
+  }
+}
+
+.team-title {
+  margin: 50px 60px 25px 60px;
+  font-family: 'TurisLight';
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $dark-green;
+}
+.team-container {
+  margin: 0px 60px 0px 60px;
+  columns: 2;
+  gap: 0;
+  .member {
+    font-family: 'TurisLight';
+    font-size: 1.6rem;
+    width: 100%;
+    
+  }
+
 }

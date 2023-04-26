@@ -2,8 +2,10 @@
 
 <template>
   <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG"/>
-  <div v-for="(group) in groups" v-bind:key="name">
-    <v-btn>{{ group.name }}</v-btn>
+  <div class="group-names">
+    <div v-for="(group) in groups" v-bind:key="group.name">
+          <NuxtLink class="group" :to="`/group/${group.slug}`">{{ group.name }}</NuxtLink>
+    </div>
   </div>
 </template>
 

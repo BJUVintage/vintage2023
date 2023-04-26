@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <h1>{{ team.name }}</h1>
-        <div v-for="(member) in team.members">
-            <p>{{ member }}</p>
-        </div>
+    <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG" />
+
+    <h1 class="team-title">{{ team.name }}</h1>
+    <div class="team-container" v-for="(member) in team.members" v-bind:key="member">
+        <div class="member">{{ member }}</div>
     </div>
 </template>
 

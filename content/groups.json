@@ -1,25 +1,85 @@
 {
-    "groups": [{
-        "name": "Bruins",
-        "slug": "bruins",
-        "content": [{
-            "name": "Basketball",
-            "slug": "basketball",
-            "members": [
-                "Bob Jones",
-                "Leslie Jones"
-            ]
-        }]
-    }, {
-        "name": "Academic",
-        "slug": "academic",
-        "content": [{
-            "name": "Programming Team",
-            "slug": "programming",
-            "members": [
-                "Rhys Fuller",
-                "Don Kuhn"
-            ]
-        }]
-    }]
+  "groups": [
+    {
+      "name": "Bruins",
+      "slug": "bruins",
+      "content": [
+        {
+          "name": "Baseball",
+          "slug": "baseball",
+          "members": [
+            "Bob Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones",
+            "Leslie Jones"
+          ]
+        },
+        {
+          "name": "Basketball",
+          "slug": "basketball",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Cross Country",
+          "slug": "cross-country",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Track and Field",
+          "slug": "track-and-field",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Golf",
+          "slug": "golf",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Soccer",
+          "slug": "soccer",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Beach Volleyball",
+          "slug": "beach-volleyball",
+          "members": ["Barnes Noble", "Some Name"]
+        },
+        {
+          "name": "Volleyball",
+          "slug": "volleyball",
+          "members": ["Barnes Noble", "Some Name"]
+        }
+      ]
+    },
+    {
+      "name": "Academic",
+      "slug": "academic",
+      "content": [
+        {
+          "name": "Programming Team",
+          "slug": "programming",
+          "members": ["Rhys Fuller", "Don Kuhn"]
+        }
+      ]
+    },
+    {
+      "name": "Societies",
+      "slug": "societies",
+      "content": [
+        {
+          "name": "Stallions",
+          "slug": "stallions",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        }
+      ]
+    }
+  ]
 }

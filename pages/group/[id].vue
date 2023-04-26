@@ -1,9 +1,27 @@
 <template>
-    <div>
-        <h1>{{ group.name }}</h1>
-        <div v-for="(team) in group.content">
-            <p>{{ team.name }}</p>
+    <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG" />
+    <!-- link tree -->
+    <div class="links-map">
+        <h4 v-for="(group) in groups" v-bind:key="group.name">
+            <NuxtLink to="">{{ group.name }}</NuxtLink>
+        </h4>
+    <!-- <div v-for="(smth) in groups" v-bind:key="smth.name">
+          <NuxtLink class="group" :to="`/group/${group.slug}`">{{ group.name }}</NuxtLink>
+    </div> -->
+
+    </div>
+    <h1 class="group-title">{{ group.name }}</h1>
+    <div class="groups-container">
+        <div class="team-name" v-for="(team) in group.content" v-bind:key="team.name">
+            <NuxtLink class="team-name" :to="`/group-${group.slug}/team/${team.slug}`">{{ team.name }}</NuxtLink>
         </div>
+
+        <!-- <div class="groups-container" v-for="(team) in group.content" v-bind:key="team.name">
+            <NuxtLink class="team-name" :to="`/group/${group.slug}`">{{ team.name }}</NuxtLink>
+        </div> -->
+
+        <!-- <NuxtLink class="team-name" v-for="(team) in group.content" v-bind:key="team.name" :to="`/group/${group.slug}`">{{ team.name }}</NuxtLink> -->
+        
     </div>
 </template>
 
@@ -15,6 +33,7 @@ export default {
     data() {
         return {
             group: {} as ParsedContent,
+            groups: [] as ParsedContent[],
         }
     },
     async mounted() {
