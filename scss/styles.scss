@@ -101,7 +101,6 @@ a:hover {
   margin: 0 0;
 
   img {
-    // height: 150px;
     width: 60vw;
     min-width: 600px;
   }
@@ -285,7 +284,7 @@ footer {
     }
   }
 }
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BASIC LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @mixin basic-layout {
   .title-container {
     display: flex;
@@ -293,14 +292,14 @@ footer {
     h1 {
       margin-top: 20px;
       font-family: "DomaineDisplay";
-      font-size: 6.4rem;
+      font-size: 5rem;
       color: $dark-green;
     }
   }
 
   p {
     font-family: "Turis";
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -352,36 +351,51 @@ footer {
 
   .img-container {
     display: flex;
-    margin-top: 15px;
     justify-content: left;
     gap: 20px;
+    position: relative;
+    height: 100%;
     img {
       margin: 0;
-      max-width: 500px;
-      max-height: 300px;
-      object-fit: cover;
+      position: absolute;
+      bottom: 0;
+      object-fit:cover;
     }
   }
 }
 
 .basic-layout-right {
   padding-bottom: 10px;
-  margin: 50px 0 50px 60px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 60px;
+  height: 70vh;
+  overflow: hidden;
 
   img:nth-child(1) {
     float: right;
-    height: 70vh;
+    max-height: 70vh;
     width: 50vw;
     object-fit: cover;
     margin-left: 60px;
   }
   @include basic-layout();
+
+  .title-container {
+    justify-content: right;
+  }
+  p {
+    text-align: right;
+  }
 }
 
 .basic-layout-left {
   padding-bottom: 10px;
   margin-top: 50px;
+  margin-bottom: 100px;
   margin-right: 60px;
+  height: 70vh;
+  overflow: hidden;
 
   img:nth-child(1) {
     float: left;

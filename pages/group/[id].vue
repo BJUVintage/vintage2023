@@ -1,15 +1,6 @@
 <template>
+    
     <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG" />
-    <!-- link tree -->
-    <div class="links-map">
-        <h4 v-for="(group) in groups" v-bind:key="group.name">
-            <NuxtLink to="">{{ group.name }}</NuxtLink>
-        </h4>
-    <!-- <div v-for="(smth) in groups" v-bind:key="smth.name">
-          <NuxtLink class="group" :to="`/group/${group.slug}`">{{ group.name }}</NuxtLink>
-    </div> -->
-
-    </div>
     <h1 class="group-title">{{ group.name }}</h1>
     <div class="groups-container">
         <div class="team-name" v-for="(team) in group.content" v-bind:key="team.name">
@@ -33,7 +24,6 @@ export default {
     data() {
         return {
             group: {} as ParsedContent,
-            groups: [] as ParsedContent[],
         }
     },
     async mounted() {

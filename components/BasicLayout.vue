@@ -1,6 +1,8 @@
 <template>
   <div :class="bigPhotoRight ? 'basic-layout-right' : 'basic-layout-left'">
-    <img :src="`/_nuxt/assets/photos/${bigPhotoName}`" alt=""/>
+    <img :src="`/_nuxt/assets/photos/${bigPhotoName}`" alt=" "/>
+
+    <!-- if we're using the component for searching -->
     <p v-if="search">{{ description }}</p>
     <div v-if="search" class="input-container">
         <input type="text" placeholder="Search for a person...">
@@ -11,6 +13,7 @@
     </div>
     <p v-if="!search">{{ description }}</p>
 
+    <!-- if we're using the component as a preview of a page -->
     <div v-if="isMini" class="btn-container">
         <button>
             <NuxtLink :to="`${buttonPage}`">{{ buttonText }}</NuxtLink>
@@ -18,8 +21,7 @@
     </div>
 
     <div class="img-container">
-        <img :src="`/_nuxt/assets/photos/${littlePhotoName}`" alt=""/>
-        <!-- <img :src="`/_nuxt/assets/photos/${littlePhoto2Name}`" alt="" /> -->
+        <img :src="`/_nuxt/assets/photos/${littlePhotoName}`" alt=" "/>
     </div>
   </div>
 </template>
@@ -34,7 +36,6 @@ export default {
     buttonPage: String, default: "",
     buttonText: String, default: "",
     littlePhotoName: String, default: "",
-    littlePhoto2Name: String, default: "",
     bigPhotoRight: Boolean, default: false,
     isMini: Boolean, default: false,
     search: Boolean, default: false,

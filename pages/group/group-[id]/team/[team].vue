@@ -1,7 +1,7 @@
 <template>
     <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG" />
 
-    <h1 class="team-title">{{ team.name }}</h1>
+    <!-- <h1 class="team-title">{{ team.name }}</h1> -->
     <div class="team-container" v-for="(member) in team.members" v-bind:key="member">
         <div class="member">{{ member }}</div>
     </div>
@@ -9,7 +9,6 @@
 
 <script lang="ts">
 import { ParsedContent } from '@nuxt/content/dist/runtime/types';
-
 export default {
     name: "GroupPage",
     data() {
@@ -26,4 +25,4 @@ export default {
         console.log(this.team);
     }
 }
-</script>
+</script> 
