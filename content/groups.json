@@ -8,54 +8,365 @@
           "name": "Baseball",
           "slug": "baseball",
           "members": [
-            "Bob Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones",
-            "Leslie Jones"
+            "Chad Bayne",
+            "Isaiah Brandt",
+            "Daniel Williams",
+            "Riley Ramsey",
+            "Noah Weaver",
+            "Kamden Lance",
+            "Cole Fazio",
+            "Conley Burk",
+            "Daniel Barcena",
+            "Zach Burk",
+            "Kyle Prouse",
+            "Cody Kirkpatrick",
+            "Henry Wallach",
+            "Gabriel Swarms",
+            "Reid Giggleman",
+            "Pablo Austin",
+            "Daniel Wood",
+            "Jerry Parker",
+            "David Twiddy"
           ]
         },
         {
-          "name": "Basketball",
-          "slug": "basketball",
-          "members": ["Barnes Noble", "Some Name"]
+          "name": "Mens Basketball",
+          "slug": "mens-basketball",
+          "members": [
+            "Tostadas Pouncey",
+            "Trevor Brunson",
+            "Stephan Hugley",
+            "Hayes Brush",
+            "Davis McCarn",
+            "Andrew Ahrens",
+            "William Snipes",
+            "Brian Sims",
+            "Lincoln Riddle",
+            "Henry Blair",
+            "Dillon Harris",
+            "Caleb Owens",
+            "Collin Jacobs",
+            "Conner Barfield",
+            "Kenney Garrick",
+            "Camden Gearhart"
+          ],
+          "coaches": ["Burton Uwarow", "Tony Miller", "John Clay", "John Baron"]
         },
         {
-          "name": "Cross Country",
-          "slug": "cross-country",
-          "members": ["Barnes Noble", "Some Name"]
+          "name": "Womens Basketball",
+          "slug": "womens-basketball",
+          "members": [
+            "Catherine Skebo",
+            "Faith McClary",
+            "Shelby Epperson",
+            "Julia Weigle",
+            "Katrina Tabora",
+            "Bailey Green",
+            "Bethany Daulton",
+            "Anna Layne Wylder",
+            "Beth Clark",
+            "Ainsley Hutton",
+            "Kyla Worley",
+            "Tamrah Konieczka",
+            "Ashley Phelan",
+            "Bria Dickinson",
+            "Hallie Ritter",
+            "Shea Dickinson"
+          ],
+          "coaches": [
+            "Mike LeViere",
+            "Sha'Ron Brunson",
+            "Rachel LeViere",
+            "Tessa Leffew",
+            "Mackenzie LeViere",
+            "Sarah McLanahan",
+            "Rebekah Wood"
+          ]
         },
         {
-          "name": "Track and Field",
-          "slug": "track-and-field",
-          "members": ["Barnes Noble", "Some Name"]
+          "name": "Men's Cross Country",
+          "slug": "mens-cross-country",
+          "members": [
+            "Seth Cordes",
+            "Jeremiah Cox",
+            "Ian Flynn",
+            "Trenton Goldsmith",
+            "Joseph Grassmid",
+            "Ryan Heying",
+            "Marc Johnson",
+            "Andrew Sarver",
+            "Evan Seaman",
+            "Sol Shafer",
+            "Gabriel Steurer",
+            "Michael Steurer",
+            "Douglas Stone"
+          ],
+          "coaches": [
+            "Ken Roach",
+            "Jonathan Keller",
+            "Lauren Leidy",
+            "Caralise Roach"
+          ]
+        },
+        {
+          "name": "Women's Cross Country",
+          "slug": "womens-cross-country",
+          "members": [
+            "Sarah Alferink",
+            "Hannah Cathey",
+            "Anna Dodds",
+            "Elizabeth Farley",
+            "Lydia Flynn",
+            "Joy Hast",
+            "Liesl Heinz",
+            "Brooke Hicks",
+            "Courtney Jones",
+            "Lauren Jones",
+            "Joanna Lain",
+            "Emma Landry",
+            "Margaret Snyder",
+            "Elisabeth Steurer"
+          ],
+          "coaches": [
+            "Ken Roach",
+            "Jonathan Keller",
+            "Lauren Leidy",
+            "Caralise Roach"
+          ]
+        },
+        {
+          "name": "Men's Track and Field",
+          "slug": "mens-track-and-field",
+          "members": [
+            "Jordan Augustus",
+            "Seth Cordes",
+            "Jeremiah Cox",
+            "Nathaniel Crowley",
+            "Moses Daung",
+            "Andrew Dubberly",
+            "Ian Flynn",
+            "Luke Fressel",
+            "Trenton Goldsmith",
+            "Joseph Grassmid",
+            "Misha Gray",
+            "David Green",
+            "Adam Grupp",
+            "Dillon Harris",
+            "Ryan Heying",
+            "Stephan Hugley",
+            "Marc Johnson",
+            "Drew Joinville",
+            "Carson Keen",
+            "Joshua Landry",
+            "Sydney Patton",
+            "Ethan Rogers",
+            "Andrew Sarver",
+            "Evan Seaman",
+            "Sol Shafer",
+            "Brian Sims",
+            "Landon Smith",
+            "Gabriel Steurer",
+            "Michael Steurer",
+            "Douglas Stone",
+            "Shad Vander Hart",
+            "Isaac Vera Cruz"
+          ],
+          "coaches": ["Ken Roach", "Jonathan Keller", "Lauren Leidy"]
+        },
+        {
+          "name": "Women's Track and Field",
+          "slug": "womens-track-and-field",
+          "members": [
+            "Cassidy Andre",
+            "Laurel Arce",
+            "Grace Bailey",
+            "Julia Chelli",
+            "Elizabeth Farley",
+            "Lydia Flynn",
+            "Joy Hast",
+            "Liesl Heinz",
+            "Audrey Huffman",
+            "Courtney Jones",
+            "Lauren Jones",
+            "Joanna Lain",
+            "Emma Landry",
+            "Brynn Lytell",
+            "Julia Majmundar",
+            "Alyssa Marks",
+            "Francesca Peters",
+            "Margaret Snyder",
+            "Elisabeth Steurer",
+            "Mikayla Whiteford",
+            "Kaniyah Witherspoon"
+          ],
+          "coaches": ["Ken Roach", "Jonathan Keller", "Lauren Leidy"]
         },
         {
           "name": "Golf",
           "slug": "golf",
-          "members": ["Barnes Noble", "Some Name"]
+          "members": [
+            "Brandon Autry",
+            "Grant Bagwell",
+            "Spencer Cable",
+            "Grant Camfield",
+            "Bryce Coursen",
+            "Ethan Craddock",
+            "Jonathan Du Fault",
+            "Zach Groce",
+            "Riley Harris",
+            "Parker Mallard",
+            "Sam Rice",
+            "Jason Ross",
+            "Timmy Smith",
+            "Josiah Swaffer",
+            "David Towberman",
+            "Jeff Tuttle",
+            "Peter Zhong"
+          ],
+          "coaches": ["Dr. Denny Scott", "Luke Jacobs", "Doug Walker"]
         },
         {
-          "name": "Soccer",
-          "slug": "soccer",
-          "members": ["Barnes Noble", "Some Name"]
+          "name": "Men's Soccer",
+          "slug": "mens-soccer",
+          "members": [
+            "Jackson Baron",
+            "Zach Burk",
+            "Chris Monczewski",
+            "Rylan Boldt",
+            "Matthias Baladi",
+            "Jake Provenzano",
+            "Nathan King",
+            "Dallas Albert",
+            "Peter Waddy",
+            "Ian Arendse",
+            "Mario Figueroa",
+            "Hodari Twishime",
+            "Andrew Buckley",
+            "Samuel Gaddis",
+            "Luke Morcos",
+            "Jose Lara",
+            "John Fahmy",
+            "Gasheed Lareche",
+            "Roussell Castillo",
+            "Ashur Stevens",
+            "Micah Hennegan",
+            "Rhys Solomon",
+            "Conley Burk",
+            "Victor Gualajara",
+            "Victor Muenapale",
+            "James McCarty",
+            "Braydn Ramler",
+            "Sandro Martinez",
+            "Zawadi Kashindi",
+            "John Schweighardt",
+            "Bryce Ramler",
+            "Gabriel Emory"
+          ],
+          "coaches": [
+            "Greg Fulton",
+            "Ryan McCarty",
+            "Micah Kline",
+            "Paul Christensen",
+            "Carson VanderSchel"
+          ]
+        },
+        {
+          "name": "Women's Soccer",
+          "slug": "womens-soccer",
+          "members": [
+            "Esther Young",
+            "Rebekah Shoop",
+            "Kate Sherf",
+            "Emily Walton",
+            "Brinkley Adams",
+            "Korbyn Griffith",
+            "Lauren Murray",
+            "Abby Herr",
+            "Reagan Tierney",
+            "Jenna Bishop",
+            "Mia Marks",
+            "Sarah Ward",
+            "Raegan Reed",
+            "Elli Cummings",
+            "Kayle Stevenson",
+            "Susie VanDoodewaard",
+            "Lexie Camfield",
+            "Gabriela Gonzalez",
+            "Sylvia Cummings",
+            "Kaylee Rochon",
+            "Anna Grace Abrams",
+            "Jessica Townsend",
+            "Ashlyn Schmidt",
+            "Braden Adams",
+            "Abigail Woo",
+            "Kaylee Poore",
+            "Allison LoVullo",
+            "Abby Arrowood",
+            "Rylee Johnson",
+            "Francesca Peters",
+            "Elizabeth Jordan",
+            "Courtney Erickson",
+            "Maddie Pedder",
+            "Sophia Pikett"
+          ],
+          "coaches": [
+            "Dr. Chris Carmichael",
+            "Debbie Pekel",
+            "Rebecca Luttrell",
+            "Ralph Polson",
+            "Oker Hernandez",
+            "Abby Prigge"
+          ]
         },
         {
           "name": "Beach Volleyball",
           "slug": "beach-volleyball",
-          "members": ["Barnes Noble", "Some Name"]
+          "members": [
+            "Anna Fleming",
+            "Anne Lloyd",
+            "Andrea Villaverde",
+            "Sophia Vosburgh",
+            "Brynn Lytell",
+            "Timbre Cruz",
+            "Holly Taylor",
+            "Elise Lewis",
+            "Katelyn Landkrohn",
+            "Faith Blalock",
+            "Emma Riddle",
+            "Emily Lewis",
+            "Madison Goldstrom",
+            "Elisabeth Fickel"
+          ],
+          "coaches": [
+            "Dr. Vickie Denny",
+            "Christa Schlichting",
+            "Hollie French"
+          ]
         },
         {
           "name": "Volleyball",
           "slug": "volleyball",
-          "members": ["Barnes Noble", "Some Name"]
+          "members": [
+            "Eden Swihart",
+            "Anne Lloyd",
+            "Kiersten Hoopes",
+            "Katelyn Landkrohn",
+            "Timbre Cruz",
+            "Katherine Hoopes",
+            "Kyra Rickard",
+            "Madison Goldstrom",
+            "Faith Blalock",
+            "Emma Riddle",
+            "Bethany Estell"
+          ],
+          "coaches": [
+            "Dr. Vickie Denny",
+            "Lou Denny",
+            "Christa Schlichting",
+            "Danielle Heffernan",
+            "Laura Gaston",
+            "Hollie French"
+          ]
         }
       ]
     },
@@ -64,9 +375,461 @@
       "slug": "academic",
       "content": [
         {
-          "name": "Programming Team",
+          "name": "Collegian",
+          "slug": "collegian",
+          "members": [
+            "Edmondson, Zachary Shields",
+            "Millar, Jonathan David",
+            "Martinez Diaz, Eylan Nicolle Nicolle",
+            "McKenney, Katelyn Eileen",
+            "Morales, Armando Miguel",
+            "Smith, Zachary Jonathan",
+            "Warren, Kirsten Hailey",
+            "Britton, Jordyn Rose",
+            "Guell, Hannah Elizabeth",
+            "Holmes, Matthew Frances James",
+            "Rayder, Arianna Joy",
+            "Pait, Josiah McKae",
+            "Lilly, Katherine Elizabeth"
+          ]
+        },
+        {
+          "name": "Collegiate Biology Association",
+          "slug": "cba",
+          "members": [
+            "Nathanael Aristide",
+            "Reese Banman",
+            "Sean Campos",
+            "Phillip Carbaugh",
+            "Alexis Casida",
+            "Andrew Castilla",
+            "Anna Coronado",
+            "Abby Covington",
+            "Juan Cruz",
+            "Brianna Donley",
+            "Emma Drago",
+            "Jan Green",
+            "Levi Heaton",
+            "Lauren Jones",
+            "William Kelly",
+            "Sarah Knisely",
+            "Abigail Liang",
+            "Selena Li",
+            "Tradd Little",
+            "Anna Marquez",
+            "Caleb Matthews",
+            "Noah Nicklas",
+            "Madeline Pedder",
+            "Sarah Powell",
+            "Emma Regan",
+            "Mary Reverski",
+            "Hannah Risser",
+            "Samantha Schreck",
+            "Damaris Scilex",
+            "Sophia Scott",
+            "Becky Smith",
+            "Lindsey Strom",
+            "James Sutherland",
+            "Amanda Treaster",
+            "Sarah Tufts",
+            "Tabitha Varnell",
+            "Daniel Wells",
+            "Caleb Wilkins",
+            "Emiley Willhite",
+            "Mikayla Ybarra",
+            "Yuhua Yue"
+          ]
+        },
+        {
+          "name": "Community Service Council",
+          "slug": "csc",
+          "members": [
+            "Bergmann, Abigail Dixie",
+            "Chen, Yilin 'Irene'",
+            "Lemmonds, Logan Thomas",
+            "Martin, Karis Joy",
+            "Parimi, Naryan Charles 'Ryan'",
+            "Reese, Hayden Elizabeth",
+            "Sherrill, Josiah Isaac 'Jo'",
+            "Smith, Landon Radford"
+          ]
+        },
+        {
+          "name": "Criminal Justice Association",
+          "slug": "cja",
+          "members": [
+            "Henry, Benaiah Mark",
+            "Stock, Bryan Zachary",
+            "Hilton, Logan James",
+            "Lasval, Adrian Julio",
+            "Kalagayan, Salfia Renee",
+            "Pierre, Johnny"
+          ]
+        },
+        {
+          "name": "Exercise and Sport Science Association",
+          "slug": "essa",
+          "members": [
+            "Stewart, Morgan Elizabeth",
+            "Taylor, Holly Susan",
+            "Townsley, Olivia Lynn",
+            "Majmundar, Julia Grace",
+            "Hensarling, Morgan Jane",
+            "Buckley, Stephanie Nicole",
+            "Bergeron, Grace Elizabeth",
+            "Perez, Daraven Michael",
+            "Hazen, Kameran Jeffrey",
+            "Wilkinson, Timothy Alan",
+            "VanderSchel, Carson David",
+            "Pikett, Sophia Grace"
+          ]
+        },
+        {
+          "name": "Health Sciences Association",
+          "slug": "hsa",
+          "members": [
+            "Reid, Zachary Colton",
+            "Bradshaw, Lennox Maree",
+            "Davis, Hannah Elyse",
+            "Williams, Lauren Paige",
+            "Broadworth, Hannah Grace",
+            "Carney, Victoria Alexandra"
+          ]
+        },
+        {
+          "name": "Intercollegiate Programming Team",
           "slug": "programming",
           "members": ["Rhys Fuller", "Don Kuhn"]
+        },
+        {
+          "name": "International Student Organization",
+          "slug": "iso",
+          "members": [
+            "Perez, Pauline Alexandra 'Pau'",
+            "Green, Jan 'David' William",
+            "Acosta De La Rosa, Marioly Berenice",
+            "Aguirre Siles, Ana Rebeca",
+            "Trabal Campusano, Miranda",
+            "Chen, Yilin 'Irene'",
+            "Herrera Tavarez, Amelia",
+            "Ross, Jason Michael"
+          ]
+        },
+        {
+          "name": "Inter-Society Executive Council",
+          "slug": "isec",
+          "members": [
+            "Haynes, Zachary Kenneth 'Zach'",
+            "Urraca Mata, Ruth Camila",
+            "Arrowood, Andrew Thomas",
+            "Bradshaw, Lennox Maree",
+            "Edwards, Zachary Jordan 'Zach'",
+            "Shelton, Cara Nicole",
+            "Kunzmann, Joshua Ross 'Josh'",
+            "Shelton, Kaleb Andrew",
+            "Reid, Zachary Colton",
+            "Thomas, Madison Elaine 'Maddy'",
+            "Dubberly, Andrew Michael"
+          ]
+        },
+        {
+          "name": "Lambda Pi Eta: NCA Honor Society",
+          "slug": "honor-society",
+          "members": [
+            "Victoria Baker",
+            "Michael Pement",
+            "Emily Stevens",
+            "Joshua Stauff",
+            "Andrea Villaverde",
+            "Jonathan Daulton Jr."
+          ]
+        },
+        {
+          "name": "Missions Advance",
+          "slug": "mission-advance",
+          "members": [
+            "Shelton, Lukas Daniel",
+            "Teachout, Adrianna Ruth",
+            "Bachman, Luke Hudson",
+            "Loescher, Lydia Joy",
+            "Disler, Christopher David",
+            "Page, Luke Alexander"
+          ]
+        },
+        {
+          "name": "METES",
+          "slug": "metes",
+          "members": [
+            "Pierre, Johnny",
+            "Parimi, Naryan Charles 'Ryan'",
+            "Kamibayashiyama, Paul Steven Sinopera",
+            "Bergmann, Abigail Dixie",
+            "Roselle, Josiah Conrad",
+            "Stewart, Lianna Frances"
+          ]
+        },
+        {
+          "name": "Music Teachers National Association",
+          "slug": "mtna",
+          "members": [
+            "Pierre, Hannah",
+            "Westphal, Megan Grace",
+            "Dunn, Susan R K",
+            "Dionne, Anna Cordelia"
+          ]
+        },
+        {
+          "name": "National Association for Music Education",
+          "slug": "name",
+          "members": [
+            "Berry, Janalyn Joy",
+            "Harris, Sarah Ruth",
+            "Charleston, Bethany Madeline",
+            "Harris, JonathanEdwards Emerson"
+          ]
+        },
+        {
+          "name": "Pre-Medical Association",
+          "slug": "pma",
+          "members": [
+            "Venegas, Joshua Manuel 'Josh",
+            "Schweitzer, Josiah Robert",
+            "Anderson, Esther Ruth",
+            "Schweitzer, Josiah Robert",
+            "Venegas, Joshua Manuel 'Josh",
+            "Rogers, Ethan Randall",
+            "Koons, Bradley Thomas",
+            "Tran, Ngo Gia An 'Lucy"
+          ]
+        },
+        {
+          "name": "Public Policy Organization",
+          "slug": "ppo",
+          "members": [
+            "Parimi, Naryan Charles 'Ryan'",
+            "Grupp, Alexander Joshua 'Alex'",
+            "Whiteley, Sarah Elizabeth",
+            "Bergmann, Abigail Dixie",
+            "Chen, Ylin 'Irene'"
+          ]
+        },
+        {
+          "name": "Robotics Team",
+          "slug": "robotics",
+          "members": ["Rhys Fuller", "Don Kuhn"]
+        },
+        {
+          "name": "Student Leadership Council",
+          "slug": "slc",
+          "members": [
+            "Aaron, Carson Allen",
+            "Martin, Karis Joy",
+            "Haynes, Zachary Kenneth",
+            "Urraca Mata, Ruth Camila",
+            "Herrera Tavarez, Amelia",
+            "Morris, Caleb Dean",
+            "Flynn, Lydia Grace",
+            "Peterson, Anna Cathleen",
+            "DiMalanta, Emma Noelle",
+            "Guell, Erica Kate",
+            "Pierre, Johnny"
+          ]
+        },
+        {
+          "name": "Student Legislature",
+          "slug": "student-legislature",
+          "members": [
+            "Abigail Bergmann",
+            "AnnaGrace Leszkowicz",
+            "Audrey Huffman",
+            "Dillon Harris",
+            "Gretchen Bradley",
+            "Hudson Knight",
+            "Johnny Pierre",
+            "Kate Huffstutler",
+            "Paul Kamibayashiyama",
+            "Sarah Whiteley",
+            "Johnathan Du Fault"
+          ]
+        },
+        {
+          "name": "University Accounting Association",
+          "slug": "uaa",
+          "members": ["Jesse Abels",
+          "Carson Blough",
+          "Jessie Cai",
+          "Elliott Case",
+          "Andrew Conn",
+          "Asa Cropsey",
+          "Mark Dickerson",
+          "Holden Duffield",
+          "Khoi Duong",
+          "Noah Forbush",
+          "Bryson French",
+          "Wesley Gay",
+          "Preston Goff",
+          "William Goff",
+          "Shangrong Han",
+          "Grace Hand",
+          "Euntaec Hong",
+          "Anya Hughes",
+          "Rachel Jackson",
+          "John Janke",
+          "Taryn Johnson",
+          "Cole Kallenberger",
+          "Selah Kaminski",
+          "Zawadi Kashindi",
+          "Emily King",
+          "Carter Kirkland",
+          "Matthew Lamberth",
+          "Rebekah Longacre",
+          "Andrew Martinez",
+          "Christian Meyer",
+          "Lydia Morrell",
+          "Shane O'Donnell",
+          "Esther Overstreet",
+          "Michelle Paredes",
+          "Yejun Park",
+          "Ean Puckett",
+          "Adam Regan",
+          "Karis Saldivar",
+          "Zachariah Scott",
+          "Evan Seaman",
+          "Lily Testi",
+          "Natalie Thorson",
+          "Sydney Tipton",
+          "Jessica Townsend",
+          "Samuel Tyrrell",
+          "Charity VanDoodewaard",
+          "Phillip Verley",
+          "Jakob White",
+          "Katelyn Whited",
+          "Caleb Worpell",
+          "Samuel Xiang"]
+        },
+        {
+          "name": "University Business Association",
+          "slug": "uba",
+          "members": ["Whiteley, Sarah",
+          "Page, Luke Alexander",
+          "Keen, Carson Zachary",
+          "DiMalanta, Emma Noelle"]
+        },
+        {
+          "name": "University Investing Association",
+          "slug": "uia",
+          "members": [
+            "Keen, Carson Zachary",
+            "Brink, Micah Paul",
+            "Bullard, Ford Mason",
+            "Case, Elliott Joseph",
+            "Casillas, Samuel Brooks",
+            "Cropsey, Asa Christopher",
+            "Depew, Micah Jonathon",
+            "DiMalanta, Emma Noelle",
+            "Griffin, Jonathan William",
+            "Guo, Jia",
+            "Haase, Daniel Paul",
+            "Jin, Zhiyi",
+            "Jordan, Nathaniel James",
+            "Leasure, Michael Louis",
+            "Lemmonds, Logan Thomas",
+            "Loeffler, Sven Elliot",
+            "Lott, Ethan Pierce",
+            "Matthews, Caleb Emerson",
+            "Mohnacky, Lindsey Anna",
+            "Page, Luke Alexander",
+            "Rankin, Maxwell James",
+            "Regan, John William",
+            "Ridge, Brett Adam",
+            "Ridge, Landon Hayes",
+            "Scott, Zachariah Evans Phillip",
+            "Sturgis, Josiah Richard",
+            "Tuttle, Jeffrey Loyd",
+            "Wang, Dawei",
+            "Wess, William Luke",
+            "Whiteley, Hannah Marie",
+            "Whiteley, Sarah Elizabeth",
+            "Xiang, Ziqi"
+          ]
+        },
+        {
+          "name": "University Marketing Association",
+          "slug": "uma",
+          "members": [
+            "Albert, Erin Rebecca",
+            "Nelson, Andrew Gustav",
+            "Pare, Ariana Danielle 'Ari'"
+          ]
+        },
+        {
+          "name": "University Entreprenership Network",
+          "slug": "uen",
+          "members": [
+            "Hughes, Emily Elizabeth",
+            "Morrell, Micah Taylor",
+            "Banks, Jared Daniel",
+            "Bush, David Paul"
+          ]
+        },
+        {
+          "name": "University Human Resources Association",
+          "slug": "uhra",
+          "members": [
+            "Zockoll, Matthew Noah",
+            "Banks, Adam Henry",
+            "Barber, Katheryn Elisabeth",
+            "Weniger, Lauren Judith"
+          ]
+        },
+        {
+          "name": "University Language Association",
+          "slug": "ula",
+          "members": [
+            "Dempewolf, Lauren Rae",
+            "Smoker, Emma Elizabeth",
+            "Fleischman, Alaura Ying",
+            "Olson, Elizabeth Anne",
+            "Gustafson, Gloria Joy",
+            "Henry, Samuel Aaron",
+            "Baer, Gabrielle Serafina"
+          ]
+        },
+        {
+          "name": "University Nursing Association",
+          "slug": "una",
+          "members": [
+            "Woo, Hannah Jolayne",
+            "Johns, William Alan 'Will",
+            "Byers, Corinne Simpson",
+            "Swihart, Leah Grace",
+            "Brock, Karis Faith",
+            "Shafer, Solomon David 'Sol'",
+            "Ontoy, Jezrell Marbella Jr. 'J.R.'"
+          ]
+        },
+        {
+          "name": "Vintage",
+          "slug": "awesomest-group-in-the-whole-yearbook-because-we-make-it-happen",
+          "members": [
+            "Sitton, Jillian Michaela",
+            "Tuttle, Anna Lynn",
+            "Castle, Susannah Lee 'Susy'",
+            "Rouse, Alexander Ryan",
+            "Thompson, Olivia Annlin",
+            "Peters, Madeline Elisabeth",
+            "Lee, Katie Rose Soo-Kyung",
+            "Williams, Abigail Christine 'Abbie'",
+            "Burcham, Rose 'Julianna'",
+            "Fleischman, Alaura Ying",
+            "Hernan, Michala Willene",
+            "Perez, Pauline Alexandra 'Pau'",
+            "Strom, Lindsey Victoria",
+            "Witt, Elias Jacob",
+            "Fuller, Rhys",
+            "Kuhn, Kevin Randall",
+            "Overton, Isabelle"
+          ]
         }
       ]
     },
@@ -75,9 +838,185 @@
       "slug": "societies",
       "content": [
         {
-          "name": "Stallions",
+          "name": "Alpha Omega Delta Lions",
+          "slug": "alpha",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Alpha Theta Pi Razorbacks",
+          "slug": "razorbacks",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Basilean Eagles",
+          "slug": "basilean",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Beta Gamma Delta Patriots",
+          "slug": "patriots",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Bryan Bears",
+          "slug": "bryan",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Chi Alpha Pi Cavaliers",
+          "slug": "cavaliers",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Chi Epsilon Delta Wolves",
+          "slug": "wolves",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Epsilon Zeta Chi Tornadoes",
+          "slug": "tornadoes",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Kappa Sigma Chi Knights",
+          "slug": "knights",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Kappa Theta Chi Stallions",
           "slug": "stallions",
           "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Lanier Falcons",
+          "slug": "lanier",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Nu Delta Chi Vikings",
+          "slug": "vikings",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Phi Delta Chi Bulldogs",
+          "slug": "bulldogs",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Phi Kappa Pi Rams",
+          "slug": "rams",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Pi Gamma Delta Royals",
+          "slug": "royals",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Pi Kappa Sigma Cobras",
+          "slug": "cobras",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Sigma Alpha Chi Spartans",
+          "slug": "spartans",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "",
+          "slug": "",
+          "members": []
+        },
+
+        {
+          "name": "Alpha Gamma Tau Eagles",
+          "slug": "eagles",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Alpha Sigma Omicron Ambassadors",
+          "slug": "ambassadors",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Beta Chi Omega Bear Cubs",
+          "slug": "bear-cubs",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Beta Epsilon Chi Cardinals",
+          "slug": "cardinals",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Chi Kappa Delta Dragons",
+          "slug": "dragons",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Chi Theta Epsilon Gators",
+          "slug": "gators",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Nu Alpha Phi Flames",
+          "slug": "flames",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Pi Delta Classics",
+          "slug": "classics",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Sigma Lambda Delta Duskie Birds",
+          "slug": "duskies",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Tau Delta Kangaroos",
+          "slug": "kangas",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Theta Alpha Chi Owls",
+          "slug": "owls",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Theta Delta Omicron Tigers",
+          "slug": "tiggers",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Theta Mu Theta Bandits",
+          "slug": "bandits",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Theta Sigma Chi Colts",
+          "slug": "colts",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Tri Epsilon Pirates",
+          "slug": "pirates",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Zeta Tau Omega Seagulls",
+          "slug": "seagulls",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "Zoe Alethia Wildcats",
+          "slug": "wildcats",
+          "members": ["Elias Witt", "Andrew Arrowwood"]
+        },
+        {
+          "name": "",
+          "slug": "",
+          "members": []
         }
       ]
     }

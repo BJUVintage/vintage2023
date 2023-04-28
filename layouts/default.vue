@@ -8,9 +8,9 @@
             </NuxtLink>
           </div>
           <div></div>
-          <div><NuxtLink class="nav-link" to="events">Events</NuxtLink></div>
-          <div><NuxtLink class="nav-link" to="groups">Groups</NuxtLink></div>
-          <div><NuxtLink class="nav-link" to="search">Search</NuxtLink></div>
+          <div><a class="nav-link" href="/events">Events</a></div>
+          <div><a class="nav-link" href="/groups">Groups</a></div>
+          <div><a class="nav-link" href="/search">Search</a></div>
         </div>
         <div class="hamburger">
           <div class="bar" />

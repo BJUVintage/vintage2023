@@ -3,12 +3,11 @@
 <template>
   <page-title :title="'Search'" svg="sheep.svg" class="search" svgClass="searchSVG" />
   <basic-layout
-    big-photo-name="feelsgoodman.jpg"
+    big-photo-name="search-photo.jpg"
     description="Search for people in the 2022-2023 yearbook archives."
     button-page="groups"
     button-text="All Groups"
-    little-photo-name="feelsgoodman.jpg"
-    little-photo-2-name="pepe_lisa.jpg"
+    little-photo-name="search-2.jpeg"
     search
   ></basic-layout>
 </template>
