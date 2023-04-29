@@ -5,8 +5,8 @@
   <basic-layout
     big-photo-name="search-photo.jpg"
     description="Search for people in the 2022-2023 yearbook archives."
-    button-page="groups"
-    button-text="All Groups"
+    button-page="search"
+    button-text="View Search Page"
     little-photo-name="search-2.jpeg"
     search
   ></basic-layout>

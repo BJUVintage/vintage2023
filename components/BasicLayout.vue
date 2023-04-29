@@ -5,7 +5,9 @@
       <div v-if="search" class="text-container">
         <p>{{ description }}</p>
         <div class="input-container">
-          <button>View Search Page</button>
+          <button>
+            <NuxtLink :to="`${buttonPage}`">{{ buttonText }}</NuxtLink>
+          </button>
         </div>
       </div>
 
