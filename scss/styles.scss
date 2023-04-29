@@ -399,25 +399,16 @@ p {
 footer {
   background-color: #f5f5f5;
   color: $dark-green;
-  padding-left: 60px;
-  padding-top: 40px;
   margin-top: 20px;
+  padding: 5% 10%;
 
-  .flex-container {
+  .footer-container {
     display: flex;
-    flex-wrap: nowrap;
-    grid-template-columns: auto auto;
+    justify-content: space-between;
   }
 
   .space-between {
     flex: 1;
-  }
-
-  .dates {
-    padding-right: 120px;
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 40px;
   }
 
   h1 {
@@ -454,6 +445,17 @@ footer {
     font-family: "Turis";
     font-size: 13px;
     text-decoration: underline;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  footer .footer-container {
+    flex-direction: column;
+
+    .dates {
+      margin-top: 5%;
+    }
   }
 }
 

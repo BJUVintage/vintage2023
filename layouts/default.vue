@@ -51,13 +51,12 @@
   </div>
 
   <footer>
-    <div class="flex-container">
+    <div class="footer-container">
       <div>
         <h2>Built by</h2>
         <h1>The Vintage Staff</h1>
         <h5>© Copyright 2022 Bob Jones University</h5>
       </div>
-      <div class="space-between" />
       <div class="dates">
         <h3>PREVIOUS YEARS</h3>
         <table>
