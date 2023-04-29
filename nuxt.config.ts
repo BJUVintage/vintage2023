@@ -2,5 +2,14 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content'
-  ]
+  ],
+  app: {
+    head: {
+      title: 'VINTAGE 2023',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+    }
+  }
 })
