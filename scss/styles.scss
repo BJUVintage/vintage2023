@@ -20,6 +20,7 @@ body {
   font-size: 1.6rem;
   margin: 0;
   overflow-x: hidden;
+  background: #f5f5f5;
 }
 
 header {
@@ -399,8 +400,8 @@ p {
 footer {
   background-color: #f5f5f5;
   color: $dark-green;
-  margin-top: 20px;
-  padding: 5% 10%;
+  margin: 20px 0;
+  padding: 20px 10%;
 
   .footer-container {
     display: flex;
@@ -478,6 +479,7 @@ footer {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BASIC LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @mixin basic-layout {
   padding: 10%;
+  background: white;
 
   .flex-container {
     display: flex;
@@ -568,6 +570,7 @@ footer {
 
 .basic-layout-right {
   @include basic-layout();
+
   .flex-container {
     flex-direction: row-reverse;
   }
@@ -578,6 +581,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+
   .basic-layout-left .flex-container,
   .basic-layout-right .flex-container {
     flex-direction: column-reverse;
@@ -595,12 +599,12 @@ footer {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GROUPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .group-names {
+  background: white;
   display: flex;
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
-  margin-top: 50px;
-  height: calc(100vh - $header-height - 150px);
+  padding: 5% 10%;
 
   .group {
     display: block;
@@ -609,13 +613,24 @@ footer {
     background-color: $dark-green;
     color: $header--bg;
     font-family: "TurisBold";
-    padding: 20vh 10vw;
+    padding: 10vh 10vh;
     text-transform: uppercase;
     border: none;
 
     a {
       color: white;
       font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .group-names {
+    flex-direction: column;
+
+    .group {
+      margin: 0;
+      padding: 5vh 10vh;
     }
   }
 }
