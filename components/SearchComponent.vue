@@ -25,6 +25,12 @@
 </template>
 
 <script>
+// URL returned in API is wrong. Remove first part of link and extension then rebuild url to image
+function getImgURL(image) {
+  let newImg = image.replace('/portraits/', '').replace('.tif', '.jpg')
+  let newUrl = `http://www.bjuvintage.com/portraits/2023/${newImg}`
+  return newUrl
+}
 
 export default {
     name: "SearchComponent",
@@ -45,7 +51,11 @@ export default {
             try {
                 const response = await fetch('https://5tlzzz9460.execute-api.us-east-2.amazonaws.com/default/search-v2', options);
                 const { people } = await response.json();
-                this.results = people;
+                const imgPeople = people.map(person => ({
+                    ...person,
+                    image: getImgURL(person.image)
+                }))
+                this.results = imgPeople;
             } catch (e) {
                 console.error(e instanceof Error && e.message);
             }
