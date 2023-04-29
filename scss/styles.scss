@@ -29,9 +29,6 @@ header {
   z-index: 99999;
 
   // ~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~
-  @media screen and (min-width: 940px) {
-  }
-
   .navbar {
     width: 100%;
     height: $header-height;
@@ -50,6 +47,162 @@ header {
     font-family: "TurisBold";
   }
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~ Mobile Hamburger Menu (https://codepen.io/erikterwan/pen/EVzeRP) ~~~~~~~~~~~~~~~~~~~~~~
+#menuToggle
+{
+  display: none;
+  position: relative;  
+  z-index: 1;  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #87a168;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #9baf96;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: 26px 0 0 -50px;
+  padding: 40px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~ NAVBAR RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~
+@media screen and (max-width: 900px) {
+  .navbar__logo img {
+    height: 30px;
+  }
+  
+  #menuToggle {
+    display: block;
+  }
+
+  .navbar__links {
+    display: none!important;
+  }
+}
+
+
 
 a {
   font-size: 2.2rem;
@@ -133,6 +286,7 @@ a:hover {
     text-align: center;
   }
 }
+
 // ~~~~~~~~~~~~~~~~~~~~~~ SECTION TITLE ~~~~~~~~~~~~~~~~~~~~~~
 .section-title {
   display: flex;
@@ -143,7 +297,7 @@ a:hover {
   overflow: hidden;
 
   h1 {
-  // absolute is making the title float over the navbar
+    // absolute is making the title float over the navbar
     position: absolute;
     top: 50px;
     left: 0;
@@ -159,6 +313,7 @@ a:hover {
 
   .svg-container {
     display: flex;
+
     img {
       opacity: 30%;
       position: relative;
@@ -169,22 +324,27 @@ a:hover {
 .events {
   background-color: $dark-blue;
 }
+
 .groups {
   background-color: $dark-green;
 }
+
 .search {
   background-color: $dark-blue;
 }
+
 .eventSVG {
   top: -130px;
   left: 75vw;
   height: 600px;
 }
+
 .groupsSVG {
   top: -200px;
   left: 65vw;
   height: 670px;
 }
+
 .searchSVG {
   top: -19px;
   left: 80vw;
@@ -259,9 +419,11 @@ footer {
     font-family: "Turis";
     margin: 0;
   }
+
   table {
     width: 100%;
   }
+
   a {
     font-family: "Turis";
     font-size: 13px;
@@ -278,15 +440,18 @@ footer {
     padding: 15px 25px 15px 25px;
     text-transform: uppercase;
     border: none;
+
     a {
       color: white;
     }
   }
 }
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BASIC LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @mixin basic-layout {
   .title-container {
     display: flex;
+
     // justify-content: left;
     h1 {
       margin-top: 20px;
@@ -309,6 +474,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
+
     input {
       width: 50%;
       min-width: 230px;
@@ -320,6 +486,7 @@ footer {
       font-size: 1.6rem;
       margin-right: 25px;
     }
+
     button {
       font-size: 1.6rem;
       border-radius: 50px;
@@ -334,6 +501,7 @@ footer {
   .btn-container {
     display: flex;
     justify-content: center;
+
     button {
       margin-bottom: 30px;
       background-color: $dark-green;
@@ -342,6 +510,7 @@ footer {
       padding: 15px 25px 15px 25px;
       text-transform: uppercase;
       border: none;
+
       a {
         color: white;
       }
@@ -354,11 +523,12 @@ footer {
     gap: 20px;
     position: relative;
     height: 100%;
+
     img {
       margin: 0;
       position: absolute;
       bottom: 0;
-      object-fit:cover;
+      object-fit: cover;
     }
   }
 }
@@ -378,11 +548,13 @@ footer {
     object-fit: cover;
     margin-left: 60px;
   }
+
   @include basic-layout();
 
   .title-container {
     justify-content: right;
   }
+
   p {
     text-align: right;
   }
@@ -403,6 +575,7 @@ footer {
     object-fit: cover;
     margin-right: 60px;
   }
+
   @include basic-layout();
 }
 
@@ -415,6 +588,7 @@ footer {
   flex-wrap: wrap;
   margin-top: 50px;
   height: calc(100vh - $header-height - 150px);
+
   .group {
     display: block;
     margin-top: 50px;
@@ -445,10 +619,12 @@ footer {
   font-size: 4rem;
   color: $dark-green;
 }
+
 .groups-container {
   margin: 0px 60px 25px 60px;
   columns: 2;
   gap: 0;
+
   .team-name {
     width: 100%;
     font-family: "Turis";
@@ -471,15 +647,17 @@ footer {
   text-transform: uppercase;
   color: $dark-green;
 }
+
 .team-container {
   margin: 0px 60px 0px 60px;
   columns: 2;
   gap: 0;
+
   .member {
     font-family: 'TurisLight';
     font-size: 1.6rem;
     width: 100%;
-    
+
   }
 
 }
