@@ -2,7 +2,6 @@
 
 <template>
   <search-component />
-  <p>poop</p>
 </template>
 
 <script>

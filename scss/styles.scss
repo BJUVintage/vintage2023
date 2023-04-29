@@ -696,3 +696,45 @@ footer {
     font-size: 1.7rem;
   }
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ SEARCH ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.search-container {
+  background: white;
+  padding: 5% 10%;
+
+  .title {
+    margin-top: 0;
+    font-family: "DomaineDisplay";
+    font-size: 5rem;
+    color: $dark-green;
+  }
+
+  &__input {
+    display: flex;
+  }
+
+  &__results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .search-result {
+    width: 20%;
+
+    &__name {
+      font-family: "DomaineDisplay";
+      font-size: 2.2rem;
+      color: #204f40;
+      text-decoration: none;
+    }
+
+    &__desc {
+      font-family: "Turis";
+      font-size: 1.6rem;
+      margin: 10px 0;
+      color: rgb(32 79 64 / 60%);
+    }
+  }
+}
