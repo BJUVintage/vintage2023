@@ -235,7 +235,7 @@ a:hover {
 .VINTAGE {
   text-align: center;
   height: calc(100vh - $header-height);
-  padding-top: 220px;
+  padding: 220px 0;
   background-color: $dark-green;
   color: $light-green;
   margin: 0 0;
@@ -275,6 +275,24 @@ a:hover {
     width: 100%;
     top: -51px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .VINTAGE {
+    height: auto;
+  }
+
+  .trapezoid {
+    margin-top: 30px;
+    border-top: 40px solid $light-green;
+    width: 100px;
+    font-size: 18px;
+
+    h2 {
+      
+    top: -37px;
+    }
   }
 }
 
