@@ -146,10 +146,12 @@ a:hover {
   display: flex;
   width: 100%;
   height: 150px;
+  // relative is making the title float over the navbar
   position: relative;
   overflow: hidden;
 
   h1 {
+  // absolute is making the title float over the navbar
     position: absolute;
     top: 50px;
     left: 0;

@@ -14,8 +14,6 @@ greet” for majors, student orientation, and international
 student orientation to acclimate students to their programs,
 faculty, and peers. From check-in to opening exercises,
 Welcome Week equips students for a successful year."
-    button-page="events"
-    button-text="All Events"
   ></basic-layout>
   <basic-layout
     big-photo-name="/events/rush-1.jpeg"

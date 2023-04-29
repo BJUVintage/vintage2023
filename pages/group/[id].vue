@@ -1,7 +1,6 @@
 <template>
     
     <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG" />
-    <h1 class="group-title">{{ group.name }}</h1>
     <div class="groups-container">
         <div class="team-name" v-for="(team) in group.content" v-bind:key="team.name">
             <NuxtLink class="team-name" :to="`/group-${group.slug}/team/${team.slug}`">{{ team.name }}</NuxtLink>
