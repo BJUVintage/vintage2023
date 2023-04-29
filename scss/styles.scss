@@ -843,5 +843,11 @@ footer {
       margin: 10px 0;
       color: rgb(32 79 64 / 60%);
     }
+
+    &__portrait img {
+      max-width: 100% !important;
+      height: auto;
+      display: block;
+    }
   }
 }
