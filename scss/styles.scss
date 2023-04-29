@@ -669,33 +669,30 @@ footer {
   }
 }
 
-.team-title {
-  margin: 50px 60px 25px 60px;
-  font-family: 'TurisLight';
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: $dark-green;
-}
-
-.team-container {
-  margin: 0px 60px 0px 60px;
-  columns: 2;
-  gap: 0;
-
-  .member {
-    font-family: 'TurisLight';
-    font-size: 1.6rem;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 1400px) {
   .groups-container {
     flex-direction: column;
     gap: 50px;
-  
+
     .team-name {
       width: 100%;
     }
+  }
+}
+
+.team-container {
+  padding: 5% 10%;
+  background-color: white;
+
+  .team-title {
+    margin-top: 0;
+    font-family: "DomaineDisplay";
+    font-size: 5rem;
+    color: $dark-green;
+  }
+
+  .member {
+    font-family: "Turis";
+    font-size: 1.7rem;
   }
 }
