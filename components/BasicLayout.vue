@@ -20,8 +20,8 @@
         </button>
     </div>
 
-    <div class="img-container">
-        <img :src="`/_nuxt/assets/photos/${littlePhotoName}`" alt=" "/>
+    <div class="img-container" v-if="littlePhotoName">
+      <img :src="`/_nuxt/assets/photos/${littlePhotoName}`" />
     </div>
   </div>
 </template>
