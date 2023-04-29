@@ -5,8 +5,7 @@
       <div v-if="search" class="text-container">
         <p>{{ description }}</p>
         <div class="input-container">
-          <input type="text" placeholder="Search for a person...">
-          <button>Search</button>
+          <button>View Search Page</button>
         </div>
       </div>
 
