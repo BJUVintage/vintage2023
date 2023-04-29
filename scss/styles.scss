@@ -566,10 +566,27 @@ footer {
 
 .basic-layout-right {
   @include basic-layout();
+  .flex-container {
+    flex-direction: row-reverse;
+  }
 }
 
 .basic-layout-left {
   @include basic-layout();
+}
+
+@media screen and (max-width: 900px) {
+  .flex-container {
+    flex-direction: column-reverse;
+
+    .img-container {
+      width: 100%;
+    }
+
+    .text-container {
+      width: 100%;
+    }
+  }
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GROUPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
