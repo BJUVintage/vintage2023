@@ -1,7 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  <search-mini />
+  <search-component />
+  <p>poop</p>
 </template>
 
 <script>
