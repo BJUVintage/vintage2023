@@ -3,7 +3,7 @@
 <template>
   <page-title :title="'Groups'" svg="dove.svg" class="groups" svgClass="groupsSVG"/>
   <basic-layout
-    big-photo-name="feelsgoodman.jpg"
+    big-photo-name="vball.jpg"
     title="Volleyball"
     description="The Bruins volleyball team secured the NCCAA DII
 National Championship, defeating Arlington Baptist
