@@ -1,27 +1,32 @@
 <template>
   <div :class="bigPhotoRight ? 'basic-layout-right' : 'basic-layout-left'">
-    <img :src="`/_nuxt/assets/photos/${bigPhotoName}`" alt=" "/>
+    <div class="flex-container">
+      <!-- if we're using the component for searching -->
+      <div v-if="search" class="text-container">
+        <p>{{ description }}</p>
+        <div class="input-container">
+          <input type="text" placeholder="Search for a person...">
+          <button>Search</button>
+        </div>
+      </div>
 
-    <!-- if we're using the component for searching -->
-    <p v-if="search">{{ description }}</p>
-    <div v-if="search" class="input-container">
-        <input type="text" placeholder="Search for a person...">
-        <button>Search</button>
-    </div>
-    <div v-if="!search" class="title-container">
+      <!-- if we're not using the component for searching -->
+      <div v-if="!search" class="text-container">
         <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+      </div>
+
+
+      <div class="img-container" v-if="bigPhotoName">
+        <img :src="`/_nuxt/assets/photos/${bigPhotoName}`" />
+      </div>
     </div>
-    <p v-if="!search">{{ description }}</p>
 
     <!-- if we're using the component as a preview of a page -->
     <div v-if="isMini" class="btn-container">
-        <button>
-            <NuxtLink :to="`${buttonPage}`">{{ buttonText }}</NuxtLink>
-        </button>
-    </div>
-
-    <div class="img-container" v-if="littlePhotoName">
-      <img :src="`/_nuxt/assets/photos/${littlePhotoName}`" />
+      <button>
+        <NuxtLink :to="`${buttonPage}`">{{ buttonText }}</NuxtLink>
+      </button>
     </div>
   </div>
 </template>

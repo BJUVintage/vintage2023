@@ -475,8 +475,17 @@ footer {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BASIC LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @mixin basic-layout {
-  .title-container {
+  padding: 10% 5%;
+
+  .flex-container {
     display: flex;
+    gap: 5%;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 
     // justify-content: left;
     h1 {
@@ -525,6 +534,7 @@ footer {
   }
 
   .btn-container {
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 
@@ -544,64 +554,21 @@ footer {
   }
 
   .img-container {
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    position: relative;
-    height: 100%;
+    width: 50%;
 
     img {
-      margin: 0;
-      position: absolute;
-      bottom: 0;
-      object-fit: cover;
+      max-width: 100% !important;
+      height: auto;
+      display: block;
     }
   }
 }
 
 .basic-layout-right {
-  padding-bottom: 10px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  margin-left: 60px;
-  height: 70vh;
-  overflow: hidden;
-
-  img:nth-child(1) {
-    float: right;
-    max-height: 70vh;
-    width: 50vw;
-    object-fit: cover;
-    margin-left: 60px;
-  }
-
   @include basic-layout();
-
-  .title-container {
-    justify-content: right;
-  }
-
-  p {
-    text-align: right;
-  }
 }
 
 .basic-layout-left {
-  padding-bottom: 10px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  margin-right: 60px;
-  height: 70vh;
-  overflow: hidden;
-
-  img:nth-child(1) {
-    float: left;
-    height: 70vh;
-    width: 50vw;
-    object-fit: cover;
-    margin-right: 60px;
-  }
-
   @include basic-layout();
 }
 
