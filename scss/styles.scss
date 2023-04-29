@@ -26,6 +26,7 @@ header {
   position: sticky;
   height: $header-height;
   top: 0;
+  z-index: 99999;
 
   // ~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~
   @media screen and (min-width: 940px) {
