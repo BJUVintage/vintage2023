@@ -2,11 +2,13 @@
 
 <template>
     <div class="search-container">
-        <h1 class="title">Search People</h1>
+        <h1 class="title">Search</h1>
 
         <div class="search-container__input">
-            <input type="text" v-model="query" />
-            <button @click="search">Search</button>
+            <input type="text" name="search" placeholder="Search for a person..." v-model="query" />
+            <button @click="search">
+                <div class="search-icon"></div>
+            </button>
         </div>
 
         <div class="search-container__results">

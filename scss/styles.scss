@@ -698,20 +698,127 @@ footer {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ SEARCH ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .search-container {
   background: white;
   padding: 5% 10%;
+  min-height: 60vh;
 
   .title {
     margin-top: 0;
+    margin-bottom: 20px;
     font-family: "DomaineDisplay";
     font-size: 5rem;
     color: $dark-green;
   }
 
+  // https://codepen.io/mubangadv/pen/GRYrpZb
   &__input {
-    display: flex;
+    position: relative;
+    width: 40ch;
+    height: 6rem;
+    padding-left: 3rem;
+    border-radius: 3rem;
+    background: #ffffff;
+    box-shadow: 0 2.5rem 10rem -2rem rgba(0, 0, 30, 0.5);
+    transition: transform 200ms ease-in-out;
+    font-size: 2rem;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 3rem;
+      box-shadow: 0 1rem 4rem -2rem rgba(0, 0, 100, 0.5);
+      opacity: 0;
+      pointer-events: none;
+  
+      transition: opacity 300ms ease-in-out;
+    }
+  
+    input {
+      all: unset;
+      height: 100%;
+      color: #333355;
+  
+      &::placeholder {
+        color: inherit;
+        opacity: 0.3;
+      }
+    }
+  
+    button {
+      all: unset;
+      position: absolute;
+      right: 0;
+      height: 6rem;
+      padding-left: 6rem;
+      border-radius: 3rem;
+      background: $dark-green;
+      cursor: pointer;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 3rem;
+        box-shadow: 0 1rem 4rem 0 rgb(41, 110, 199, 0.25),
+          0 1rem 2rem -1.5rem rgb(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+  
+      &:hover::before {
+        opacity: 1;
+      }
+  
+      label {
+        display: block;
+        opacity: 0;
+        color: white;
+        width: 0;
+        transition: width 200ms ease-in-out, opacity 100ms ease-in-out;
+      }
+  
+      .search-icon {
+        position: absolute;
+        height: 1.6rem;
+        width: 1.6rem;
+        top: 2rem;
+        left: 1.6rem;
+        border: 0.250rem solid white;
+        border-radius: 50%;
+        box-sizing: border-box;
+        transform: rotate(-45deg);
+  
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1rem;
+          width: 0.25rem;
+          background: white;
+          left: calc(50% - (0.25rem / 2));
+          bottom: -1.2rem;
+        }
+      }
+    }
+  
+    &:has(input:not(:placeholder-shown)) {
+      button {
+        label {
+          opacity: 1;
+          width: 6rem;
+          margin-left: -1rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  
+    &:has(input:focus) {
+      transform: translateY(-1rem);
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 
   &__results {
@@ -725,14 +832,14 @@ footer {
 
     &__name {
       font-family: "DomaineDisplay";
-      font-size: 2.2rem;
+      font-size: 4.4rem;
       color: #204f40;
       text-decoration: none;
     }
 
     &__desc {
       font-family: "Turis";
-      font-size: 1.6rem;
+      font-size: 3.2rem;
       margin: 10px 0;
       color: rgb(32 79 64 / 60%);
     }
