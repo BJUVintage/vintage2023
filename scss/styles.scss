@@ -726,7 +726,7 @@ footer {
     transition: transform 200ms ease-in-out;
     font-size: 2rem;
     margin: 40px 0;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -735,21 +735,21 @@ footer {
       box-shadow: 0 1rem 4rem -2rem rgba(0, 0, 100, 0.5);
       opacity: 0;
       pointer-events: none;
-  
+
       transition: opacity 300ms ease-in-out;
     }
-  
+
     input {
       all: unset;
       height: 100%;
       color: #333355;
-  
+
       &::placeholder {
         color: inherit;
         opacity: 0.3;
       }
     }
-  
+
     button {
       all: unset;
       position: absolute;
@@ -759,7 +759,7 @@ footer {
       border-radius: 3rem;
       background: $dark-green;
       cursor: pointer;
-  
+
       &::before {
         content: "";
         position: absolute;
@@ -770,11 +770,11 @@ footer {
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
-  
+
       &:hover::before {
         opacity: 1;
       }
-  
+
       label {
         display: block;
         opacity: 0;
@@ -782,7 +782,7 @@ footer {
         width: 0;
         transition: width 200ms ease-in-out, opacity 100ms ease-in-out;
       }
-  
+
       .search-icon {
         position: absolute;
         height: 1.6rem;
@@ -793,7 +793,7 @@ footer {
         border-radius: 50%;
         box-sizing: border-box;
         transform: rotate(-45deg);
-  
+
         &::after {
           content: "";
           position: absolute;
@@ -805,7 +805,7 @@ footer {
         }
       }
     }
-  
+
     &:has(input:not(:placeholder-shown)) {
       button {
         label {
@@ -816,9 +816,10 @@ footer {
         }
       }
     }
-  
+
     &:has(input:focus) {
       transform: translateY(-1rem);
+
       &::before {
         opacity: 1;
       }
@@ -852,6 +853,34 @@ footer {
       max-width: 100% !important;
       height: auto;
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-container {
+    .search-container__input {
+      width: 90%;
+      font-size: 1.7rem;
+    }
+
+    .search-result {
+      width: 45%;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .search-container {
+    .search-container__input {
+      width: 90%;
+      font-size: 1.7rem;
+    }
+
+    .search-result {
+      width: 100%;
     }
   }
 }
