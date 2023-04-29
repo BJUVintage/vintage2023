@@ -36,21 +36,12 @@ header {
     height: $header-height;
     display: flex;
     align-items: center;
-    padding: 0 60px;
-    z-index: 1;
+    justify-content: space-between;
+    padding: 0 10%;
 
-    .nav-link {
-      margin-right: 20px;
-    }
-
-    // VINTAGE svg
-    div:nth-child(1) {
-      margin-left: 60px;
-    }
-
-    // space in between
-    div:nth-child(2) {
-      flex: auto;
+    &__links {
+      display: flex;
+      gap: 10px;
     }
   }
 

@@ -2,22 +2,22 @@
   <header>
     <nav>
         <div class="navbar">
-          <div>
+          <div class="navbar__logo">
             <NuxtLink to="/">
               <img class="nav-link" src="~/assets/svgs/VINTAGE.svg" alt="">
             </NuxtLink>
           </div>
-          <div></div>
-          <div><a class="nav-link" href="/events">Events</a></div>
-          <div><a class="nav-link" href="/groups">Groups</a></div>
-          <div><a class="nav-link" href="/search">Search</a></div>
+          <div class="navbar__links">
+            <a class="nav-link" href="/events">Events</a>
+            <a class="nav-link" href="/groups">Groups</a>
+            <a class="nav-link" href="/search">Search</a>
+          </div>
         </div>
         <div class="hamburger">
           <div class="bar" />
           <div class="bar" />
           <div class="bar" />
         </div>
-
     </nav>
   </header>
 
